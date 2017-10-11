@@ -24,7 +24,10 @@
 
       <div class="row text-center text-lg-left">
 
-      
+
+
+      @if( $pics && count($pics) > 0 )
+
       @foreach($pics as $pic)
        <div class="col-lg-3 col-md-4 col-xs-6">
        <img src="{{ asset("images/thumb/$pic->picture")}}" alt="">
@@ -35,7 +38,7 @@
      </div>
     @endforeach
 
-         
+     @endif    
 
 
 

@@ -25,7 +25,7 @@
       <div class="row text-center text-lg-left">
 
 
-
+      @if( $data && count($data) > 0 )
       
       @foreach($data as $key => $pic)
 
@@ -48,6 +48,7 @@
 @endfor
 @endforeach
 
+@endif
 
       </div>
 
