@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
 use App\Http\Requests\CategoryRequest;
+use App\Http\Requests\GalleryRequest;
 use Hash;
 use App\User;
+use App\Picture;
 use App\Category;
+use Intervention\Image\Facades\Image;
 
 
 
@@ -87,18 +90,12 @@ class HomeController extends Controller
 
 
 
-    public function portfolio()
-    {
-        
-        $data = category::all();
-        return view('home/portfolio')->with('data', $data);
-    }
 
 
 
     public function categories()
     {
-        $data = category::all();
+        $data = Category::all();
         return view('home/categories')->with('data', $data);
     }
 
@@ -135,13 +132,85 @@ class HomeController extends Controller
     }
 
 
+    public function deleteCategory($id)
+    {
+      $data = Category::find($id);
+      $data->delete();
+      return redirect()->route('categories');
+    }
+    
+
+
+    public function createPortfolio()
+    {
+        $cat = Category::all();
+        return view('home/create-portfolio')->with('cat',$cat);
+    }
+    
+
+
+    public function postPortfolio(GalleryRequest $request)
+    {
+
+
+        $image = $request->file('picture');
+        $cat = $request->get('category');
+
+            /* change name */
+            $filename = arrageImageName($image->getClientOriginalName()); 
+            
+
+            
+             /* inserting in database */
+            $photo  = Picture::create(array(  
+            'picture'=> $filename,
+            'category_id'=> $cat,     
+            )); 
+            
+             /* 
+              * Declearing path
+              * make sure you chmod 777 the dir below 
+              * or you will get error daying "Can't write image data to path "
+              *  */
+            $thumb_path = 'images/thumb/'.$filename;
+            $normal_path = 'images/pics/'.$filename;  
+            
+            $thumb = Image::make($image->getRealPath())->resize(200, 133)->sharpen(15)->save($thumb_path);
+            $normalimage = Image::make($image->getRealPath())->save( $normal_path);   
+            
+
+        return redirect()->route('portfolio');
+    }
+
+
+
+    public function portfolio()
+    {
+        
+        $cats = Category::all();
+        $pics = Picture::all();
+        return view('home/portfolio')->with('cats', $cats)
+                                     ->with('pics',$pics);
+    }
 
 
 
 
+    public function categoryPortfolio($cat)
+    {
+        $cats = Category::all();
+        $data =  Category::with('pictures')->where('slug','=',$cat)->paginate();
+  //return $data[0]['pictures'];
+    //return $data[0]['pictures'];
 
 
+    //return $data;
 
+        return view('home/categoryportfolio')
+        ->with('cats', $cats)
+        ->with('data',$data);
+    }
+    
 
 
 

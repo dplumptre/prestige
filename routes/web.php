@@ -29,9 +29,9 @@ Route::get('/welcome/contact', function () {
 
 Auth::routes();
 
-Route::group(['prefix' => 'home'], function () {
 
 
+<<<<<<< HEAD
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('about', 'HomeController@about')->name('about');
 Route::get('services', 'HomeController@services');
@@ -40,11 +40,30 @@ Route::get('users', 'HomeController@users');
 Route::get('create-user', 'HomeController@createUser')->name('create.user');
 Route::post('create-user', 'HomeController@postUser')->name('post.user');
 Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');
+=======
+>>>>>>> 9f91146f5ee3a2ff5206a4990768e0c51e857751
 
-Route::get('categeries', 'HomeController@categories')->name('categories');
-Route::get('create-category', 'HomeController@createCategory')->name('create.category');
-Route::post('create-category', 'HomeController@postCategory')->name('post.category');
+#
+#  HOME CONTROLLER 
+#
 
-Route::get('portfolio', 'HomeController@portfolio')->name('portfolio');
 
+Route::group(['prefix' => 'home'], function () {
+    Route::get('/', 'HomeController@index')->name('home');
+
+    Route::get('users', 'HomeController@users')->name('users');
+    Route::get('create-user', 'HomeController@createUser')->name('create.user');
+    Route::post('create-user', 'HomeController@postUser')->name('post.user');
+    Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');
+
+    Route::get('categeries', 'HomeController@categories')->name('categories');
+    Route::get('create-category', 'HomeController@createCategory')->name('create.category');
+    Route::post('create-category', 'HomeController@postCategory')->name('post.category');
+    Route::delete('categories/{id}', 'HomeController@deleteCategory')->name('delete.category');
+
+    Route::get('portfolio', 'HomeController@portfolio')->name('portfolio');
+    Route::get('create-portfolio', 'HomeController@createPortfolio')->name('create.portfolio');
+    Route::post('create-portfolio', 'HomeController@postPortfolio')->name('post.portfolio');
+
+    Route::get('portfolio/{any}', 'HomeController@categoryPortfolio')->name('category.portfolio');
 });
