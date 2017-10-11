@@ -12,7 +12,24 @@
 */
 
 
+
+
 Auth::routes();
+
+
+
+Route::get('/', 'WelcomeController@index')->name('index');
+
+Route::group(['prefix' => 'welcome'], function () {
+  
+    Route::get('about', 'WelcomeController@about')->name('about');
+    Route::get('services', 'WelcomeController@services')->name('services');
+    Route::get('portfolio', 'WelcomeController@portfolio')->name('welcome.portfolio');
+    Route::post('contact', 'WelcomeController@contact')->name('contact');
+});
+
+
+
 
 
 
