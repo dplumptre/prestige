@@ -11,37 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome/welcome');
-});
 
-Route::get('/welcome/about', function () {
-    return view('welcome/about');
-});
-
-Route::get('/welcome/services', function () {
-    return view('welcome/services');
-});
-
-Route::get('/welcome/contact', function () {
-    return view('welcome/contact');
-});
 
 Auth::routes();
 
 
 
-<<<<<<< HEAD
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('about', 'HomeController@about')->name('about');
-Route::get('services', 'HomeController@services');
-Route::get('contact', 'HomeController@contact');
-Route::get('users', 'HomeController@users');
-Route::get('create-user', 'HomeController@createUser')->name('create.user');
-Route::post('create-user', 'HomeController@postUser')->name('post.user');
-Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');
-=======
->>>>>>> 9f91146f5ee3a2ff5206a4990768e0c51e857751
+Route::get('/', 'WelcomeController@index')->name('index');
+
+Route::group(['prefix' => 'welcome'], function () {
+  
+    Route::get('about', 'WelcomeController@about')->name('about');
+    Route::get('services', 'WelcomeController@services')->name('services');
+    Route::get('portfolio', 'WelcomeController@portfolio')->name('welcome.portfolio');
+    Route::post('contact', 'WelcomeController@contact')->name('contact');
+});
+
+
+
+
+
 
 #
 #  HOME CONTROLLER 
