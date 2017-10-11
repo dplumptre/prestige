@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
+#
+#  REMEMBER TO ADD /API
+#
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
+Route::get('portfolio', 'ApiController@portfolio');
