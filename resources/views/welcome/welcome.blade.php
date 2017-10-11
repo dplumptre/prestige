@@ -524,48 +524,8 @@
 			</div>
 			<!-- section end -->
 
-			<!-- section start -->
-			<!-- ================ -->
-			<div class="section gray-bg text-muted footer-top clearfix">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="owl-carousel clients">
-								<div class="client">
-									<a href="#"><img src="images/client-1.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-2.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-3.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-4.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-5.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-6.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-7.png" alt=""></a>
-								</div>
-								<div class="client">
-									<a href="#"><img src="images/client-8.png" alt=""></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<blockquote class="inline">
-								<p class="margin-clear">"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
-</p>	
-								<footer><cite title="Source Title">ANTOINE DE SAINT-EXUPÉRY </cite></footer>
-							</blockquote>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- section end -->
+
+
+			@section('footer')
+
             @endsection

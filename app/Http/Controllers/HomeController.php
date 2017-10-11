@@ -55,6 +55,7 @@ class HomeController extends Controller
     
         return view('home/users')->with('data', $data);
     }
+
     
     public function createUser()
     {

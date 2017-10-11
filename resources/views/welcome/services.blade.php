@@ -43,58 +43,7 @@
 
 <!-- main start -->
 						<!-- ================ -->
-						<div class="main col-md-12">
-
-							<!-- page-title start -->
-							<!-- ================ -->
-							<h1 class="page-title text-center">Core Features</h1>
-							<div class="separator"></div>
-							<!-- page-title end -->
-							
-							<div class="row">
-								<div class="col-md-6">
-									<div class="box-style-3 right animated fadeInUpSmall">
-										<div class="icon-container default-bg">
-											<i class="fa fa-bold"></i>
-										</div>
-										<div class="body">
-											<h2>Bootstrap Based</h2>
-											<p>Voluptatem ad provident non veritatis beatae cupiditate amet reiciendis.</p>
-											<a href="page-services.html" class="link"><span>Read More</span></a>
-										</div>
-									</div>
-									<div class="box-style-3 right animated fadeInUpSmall">
-										<div class="icon-container default-bg">
-											<i class="fa fa-check"></i>
-										</div>
-										<div class="body">
-											<h2>Unlimited Options</h2>
-											<p>Iure sequi unde hic. Sapiente quaerat labore inventore veritatis cumque.</p>
-											<a href="page-services.html" class="link"><span>Read More</span></a>
-										</div>
-									</div>
-									<div class="box-style-3 right animated fadeInUpSmall">
-										<div class="icon-container default-bg">
-											<i class="fa fa-bicycle"></i>
-										</div>
-										<div class="body">
-											<h2>Easy to Use</h2>
-											<p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
-											<a href="page-services.html" class="link"><span>Read More</span></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="space hidden-lg hidden-md"></div>
-									<img class="animated fadeInUpSmall" src="images/services-1.png" alt="iDea">
-								</div>
-							</div>
-							<div class="space"></div>
-
-						</div>
-						<!-- main end -->
-
-
+						
                        
 						<!-- main start -->
 						<!-- ================ -->
@@ -107,8 +56,6 @@
 							<!-- page-title end -->
 							
 							<div class="row">
-								<div class="col-md-8">
-                                <img src="images/services_sm.jpg" alt="">
 									<p>Whether you enjoy surrounding yourself with time honored traditional design, or inspired, modern, cutting edge couture; it’s our ultimate goal to design spaces that reflect your taste and lifestyle. Whether your project involves a living room, family room, dining room, bedroom or office we have the products and ideas to suit your every need. 
 <p>We pride ourselves on working collaboratively with our clients to find the perfect products that satisfy their design style and budget. We make the interior design process easy and fun. 
 <p>We have thousands of samples of top quality home furnishings products from drapery, blinds, shades, furniture, bedding, lighting, accessories, artwork, floor covering and wall covering from which to choose. And the best part, we bring our design ideas and samples to the most convenient showroom in the world – your home or office. 
@@ -269,7 +216,7 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">How we work</h1>
+							<h1 class="page-title">The process we follow</h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 							
