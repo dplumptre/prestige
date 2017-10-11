@@ -142,12 +142,12 @@
 
 								<!-- logo -->
 								<div class="logo">
-									<a href="index.html"><img id="logo" src="images/logo_red.png" alt="iDea"></a>
+								@include('layouts.partials.logo')
 								</div>
 
 								<!-- name-and-slogan -->
 								<div class="site-slogan">
-									Clean &amp; Powerful Bootstrap Theme
+									<!-- Prestige for prestigious people -->
 								</div>
 
 							</div>

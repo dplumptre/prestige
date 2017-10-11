@@ -19,7 +19,7 @@
                                         <th class="text-center"></th>
                                         <th class="text-center">Categories</th>
                                         <th class="text-center" style="width: 10%;">Actions</th>
-                                        <th class="text-center"><a href="{{ route('create.category')}}"><i class="fa fa-plus"></i></a></th>
+                                        <th class="text-center"><a style="color:white" href="{{ route('create.category')}}"><i class="fa fa-plus"></i></a></th>
                                     </tr>
                                 </thead>
                                 
@@ -31,7 +31,7 @@
                                         <td class="text-center">{{ $key + 1 }}</td>
                                         <td class="text-center">{{$row->category}}</td>
                                         <td class="text-center">
-                        <form class="form-horizontal push-5-t" action="{{ url('home/programmes/'.$row->id) }}" method="POST">
+                        <form class="form-horizontal push-5-t" action="{{ url('home/categories/'.$row->id) }}" method="POST">
                         <input type="hidden" name="_method" value="delete" />    
                         {{csrf_field()}}      
                         <button type="submit" onclick="javascript:return confirm('Are you sure to delete ')" class="label label-danger"> <i class="fa fa-trash-o"></i></button> 

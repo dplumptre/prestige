@@ -9,8 +9,8 @@
           <h5  class="text-right"> 
 
 
-          @foreach($cats as $data)
-          / <a href="{{ asset("/home/portfolio/$data->slug")}}" > {{$data->category}}</a>
+          @foreach($cats as $cat)
+          / <a href="{{ asset("/home/portfolio/$cat->slug")}}" > {{$cat->category}}</a>
 
           @endforeach
           / <a href="{{ asset("home/create-portfolio")}}" ><i class="fa fa-plus"></i> create Portfolio</a></h5>
@@ -24,20 +24,29 @@
 
       <div class="row text-center text-lg-left">
 
+
+
       
-      @foreach($pics as $pic)
+      @foreach($data as $key => $pic)
+
+      <?php $count = count($pic->pictures) ?>
+
+@for( $i = 0 ; $i < $count ; $i++)
+
+{{-- $pic->pictures[$i]->picture --}}
+     
+     
+
        <div class="col-lg-3 col-md-4 col-xs-6">
-       <img src="{{ asset("images/thumb/$pic->picture")}}" alt="">
-       <a href="{{ asset("images/pics/$pic->picture")}}" class="overlay small popup-img" title="">
+       <img   src="{{asset('images/thumb/'.$pic->pictures[$i]->picture)}}" alt="">
+       <a href="{{ asset('images/pics/'.$pic->pictures[$i]->picture)}}" class="overlay small popup-img" title="">
          <i class="fa fa-search-plus"></i>
        </a>
        <div class="text-center"><a href="#"><i class="fa fa-trash"></i> trash</a></div>
      </div>
-    @endforeach
-
          
-
-
+@endfor
+@endforeach
 
 
       </div>

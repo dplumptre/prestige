@@ -19,7 +19,7 @@
                                         <th class="text-center"></th>
                                         <th class="text-center">Names</th>
                                         <th class="text-center">Email</th>
-                                        <th class="text-center" style="width: 10%;"><a href="{{ route('create.user')}}"><i class="fa fa-plus"></i></a></th>
+                                        <th class="text-center" style="width: 10%;"><a style="color:white"href="{{ route('create.user')}}"><i class="fa fa-plus"></i></a></th>
                                
                                     </tr>
                                 </thead>
@@ -36,7 +36,7 @@
 
                                       
                                                        
-                        <form class="form-horizontal push-5-t" action="{{ url('users/'.$row->id) }}" method="POST">
+                        <form class="form-horizontal push-5-t" action="{{ url('home/users/'.$row->id) }}" method="POST">
                         <input type="hidden" name="_method" value="delete" />    
                         {{csrf_field()}}      
                         <button type="submit" onclick="javascript:return confirm('Are you sure to delete ')" class="label label-danger">

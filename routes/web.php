@@ -17,19 +17,30 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+
+
+#
+#  HOME CONTROLLER 
+#
+
+
 Route::group(['prefix' => 'home'], function () {
+    Route::get('/', 'HomeController@index')->name('home');
 
+    Route::get('users', 'HomeController@users')->name('users');
+    Route::get('create-user', 'HomeController@createUser')->name('create.user');
+    Route::post('create-user', 'HomeController@postUser')->name('post.user');
+    Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('users', 'HomeController@users')->name('users');
-Route::get('create-user', 'HomeController@createUser')->name('create.user');
-Route::post('create-user', 'HomeController@postUser')->name('post.user');
-Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');
+    Route::get('categeries', 'HomeController@categories')->name('categories');
+    Route::get('create-category', 'HomeController@createCategory')->name('create.category');
+    Route::post('create-category', 'HomeController@postCategory')->name('post.category');
+    Route::delete('categories/{id}', 'HomeController@deleteCategory')->name('delete.category');
 
-Route::get('categeries', 'HomeController@categories')->name('categories');
-Route::get('create-category', 'HomeController@createCategory')->name('create.category');
-Route::post('create-category', 'HomeController@postCategory')->name('post.category');
+    Route::get('portfolio', 'HomeController@portfolio')->name('portfolio');
+    Route::get('create-portfolio', 'HomeController@createPortfolio')->name('create.portfolio');
+    Route::post('create-portfolio', 'HomeController@postPortfolio')->name('post.portfolio');
 
-Route::get('portfolio', 'HomeController@portfolio')->name('portfolio');
-
+    Route::get('portfolio/{any}', 'HomeController@categoryPortfolio')->name('category.portfolio');
 });
