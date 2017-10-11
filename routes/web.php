@@ -15,13 +15,28 @@ Route::get('/', function () {
     return view('welcome/welcome');
 });
 
+Route::get('/welcome/about', function () {
+    return view('welcome/about');
+});
+
+Route::get('/welcome/services', function () {
+    return view('welcome/services');
+});
+
+Route::get('/welcome/contact', function () {
+    return view('welcome/contact');
+});
+
 Auth::routes();
 
 Route::group(['prefix' => 'home'], function () {
 
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('users', 'HomeController@users')->name('users');
+Route::get('about', 'HomeController@about')->name('about');
+Route::get('services', 'HomeController@services');
+Route::get('contact', 'HomeController@contact');
+Route::get('users', 'HomeController@users');
 Route::get('create-user', 'HomeController@createUser')->name('create.user');
 Route::post('create-user', 'HomeController@postUser')->name('post.user');
 Route::delete('users/{id}', 'HomeController@deleteUser')->name('delete.user');

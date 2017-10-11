@@ -12,8 +12,8 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<div class="call-to-action">
-								<h1 class="title">iDea Clean and Unique Design</h1>
-								<p>Sed ut Perspiciatis Unde Omnis Iste Sed ut perspiciatis unde omnis iste natu error sit  voluptatem accusan tium </p>
+								<h1 class="title">Prestigious design for everyone</h1>
+								<p>We work with your budget, style, and unique space. We'll even incorporate any of your existing pieces into the room design.  </p>
 								<a class="btn btn-white more" data-toggle="modal" data-target="#myModal">
 								Read more <i class="pl-10 fa fa-info"></i>
 								</a>
@@ -64,29 +64,29 @@
 							<div class="col-md-12">
 								<h1 class="text-center title">Features</h1>
 								<div class="separator"></div>
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="text-center">Personalize your design:	We work with your budget, style, and unique space.</p>
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
-											<i class="fa fa-leaf"></i>
-											<h2>Clean Design and Code</h2>
-											<p>Voluptatem ad provident non <a href="#">repudiandae</a> veritatis beatae cupiditate amet reiciendis.</p>
+											<img src="images/feature-1.jpg" alt="" class="fa">
+											<h2>Custom furniture design</h2>
+											<p> Individual furniture items, kitchen and bath cabinetry, Custom window covering design</p>
 											<a href="page-services.html" class="btn-default btn">Read More</a>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
-											<i class="fa fa-laptop"></i>
-											<h2>Very Flexible</h2>
-											<p>Iure sequi unde hic. Sapiente quaerat labore sequi inventore veritatis cumque.</p>
+											<img src="images/feature-2.jpg" alt="" class="fa">
+											<h2>Art acquisition </h2>
+											<p>We help in identifying client's personal art style, shopping, sourcing and design integration</p>
 											<a href="page-services.html" class="btn-default btn">Read More</a>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
-											<i class="fa fa-sitemap"></i>
-											<h2>Latest Technologies</h2>
-											<p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
+											<img src="images/feature-3.jpg" alt="" class="fa">
+											<h2>Color consulting </h2>
+											<p>We help you choose the right colour scheme, Paint, update for the season... </p>
 											<a href="page-services.html" class="btn-default btn">Read More</a>
 										</div>
 									</div>
@@ -108,20 +108,20 @@
 						<div class="col-md-12">
 							<h1 class="text-center">About Us</h1>
 							<div class="separator"></div>
-							<p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p>
+							<p class="lead text-center">We specialize in seamlessly executing luxury interior designs <br> that reflect each client's individual needs.</p>
 							<br>
 							<div class="row">
 								<div class="col-md-6">
-									<h2 class="title">iDea - Responsive Website Theme</h2>
+									<h2 class="title"> We Understand Interior Design </h2>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="images/section-image-2.png" alt="">
+											<img src="images/about_sm.jpg" alt="">
 										</div>
 										<div class="col-md-6">
-											<p>Quo soluta provident, quod reiciendis. Dolores nam totam aut illum ex ratione harum molestias maxime minima tempore, possimus, laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p>What to design, when to design it, how to design it, and most importantly to whom it should be designed for. We have a good sense of how the room should look and what products we should use. </p>
 										</div>
 									</div>
-									<p>Esse sequi veniam, assumenda voluptate necessitatibus ipsa dicta vero, minima natus cum cupiditate magnam et placeat quo adipisci.</p>
+									<p>By establishing a foundation of trust and transparency with each client, we ensure that projects are completed on budget and on time.  </p>
 									<a href="page-about.html" class="btn btn-white">Learn More</a>
 									<div class="space hidden-md hidden-lg"></div>
 								</div>
@@ -131,13 +131,13 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-														<i class="fa fa-bold"></i>Bootstrap Based
+														<i class="fa fa-bold"></i>Our Strength
 													</a>
 												</h4>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse in">
 												<div class="panel-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+													We have a team of professionals, energetic individual’s, talented designers and experienced managers available to guide our client’s through the flawless and timely execution of any design project. Our team takes pride in creating luxurious and innovative homes that have a very intimate connection to our clients and their families.  
 												</div>
 											</div>
 										</div>
@@ -145,13 +145,13 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-														<i class="fa fa-leaf"></i>Clean &amp; powerful code
+														<i class="fa fa-leaf"></i>We understand client needs
 													</a>
 												</h4>
 											</div>
 											<div id="collapseTwo" class="panel-collapse collapse">
 												<div class="panel-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+													We understand each project we begin has specific needs, budgets, and a level of quality with the work involved. We also understand that not all of our clients will have the same needs, but that’s where we tailor our services to your requirements. Often clients will insist that interior decorators use the products already present in the house. Other times a designer will need to start from scratch — especially if this is a newly purchased or just-built home. Prestige will figure out exactly what the client needs, which includes organizing rooms, picking flooring and wall colors, and finding furniture to complement it all.
 												</div>
 											</div>
 										</div>
@@ -159,13 +159,13 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-														<i class="fa fa-html5"></i>HTML5/CSS3
+														<i class="fa fa-html5"></i>We understand the market
 													</a>
 												</h4>
 											</div>
 											<div id="collapseThree" class="panel-collapse collapse">
 												<div class="panel-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+													We understand the markets and employ the most efficient and effective methods to get to our clients’ as much as our client desires. We don’t just do design/decoration at Prestige, we live and breathe it. We only use ethical methods and rely on tried and tested techniques to enhance your exposure. 
 												</div>
 											</div>
 										</div>
@@ -207,9 +207,9 @@
 					<div class="row">
 						<div class="col-md-12">
 
-							<h1 class="text-center">Why Choose iDea</h1>
+							<h1 class="text-center">Why Choose Prestige</h1>
 							<div class="separator"></div>
-							<p class="lead text-center">Lorem ipsum dolor sit amet. Maiores, odio ut deleniti doloremque ad at praesentium<br> laudantium molestias similique. Quisquam incidunt ut laboriosam.</p>
+							<p class="lead text-center">We specialize in one thing "prestigious designs" using a fresh & sophisticated approach <br>to designing contemporary environments.</p>
 							
 							<!-- Tabs start -->
 							<!-- ================ -->
@@ -229,102 +229,79 @@
 								
 								<!-- Nav tabs -->
 								<ul class="nav nav-tabs" role="tablist">
-									<li class="active"><a href="#tab1" role="tab" data-toggle="tab"><i class="fa fa-magic pr-10"></i> Very Flexible</a></li>
-									<li><a href="#tab2" role="tab" data-toggle="tab"><i class="fa fa-life-saver pr-10"></i> Top Notch 24/7 Support</a></li>
-									<li><a href="#tab3" role="tab" data-toggle="tab"><i class="fa fa-expand pr-10"></i> 100% Responsive</a></li>
-									<li><a href="#tab4" role="tab" data-toggle="tab"><i class="fa fa-file-o pr-10"></i> Well Documented</a></li>
+									<li class="active"><a href="#tab1" role="tab" data-toggle="tab"><i class="fa fa-magic pr-10"></i> What We Do</a></li>
+									<li><a href="#tab2" role="tab" data-toggle="tab"><i class="fa fa-life-saver pr-10"></i> How we Work</a></li>
+									<li><a href="#tab3" role="tab" data-toggle="tab"><i class="fa fa-phone pr-10"></i> Top notch 24/7 support </a></li>
 								</ul>
 
 								<!-- Tab panes -->
 								<div class="tab-content">
 									<div class="tab-pane fade in active" id="tab1">
-										<h1 class="text-center title">Very Flexible</h1>
+										<h1 class="text-center title">What We Do</h1>
 										<div class="space"></div>
 										<div class="row">
 											<div class="col-md-6">
 												<ul class="list-icons">
-													<li><i class="icon-check pr-10"></i> Lorem ipsum dolor sit amet maiores</li>
-													<li><i class="icon-check pr-10"></i> Consectetur adipisicing elit</li>
-													<li><i class="icon-check pr-10"></i> Aut earum numquam hic placeat</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Vitae magnam commodi repellendus</li>
-													<li><i class="icon-check pr-10"></i> Expedita placeat omnis pariatur</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
+													<li><i class="icon-check pr-10"></i> Interior Design & Construction</li>
+													<li><i class="icon-check pr-10"></i> Interior Decorating</li>
+													<li><i class="icon-check pr-10"></i> Sustainable & Universal Design</li>
+													<li><i class="icon-check pr-10"></i> Small and large-scale renovations</li>
+													<li><i class="icon-check pr-10"></i> Remodeling & Renderings</li>
+													<li><i class="icon-check pr-10"></i> Wine Cellar Design</li>
+													<li><i class="icon-check pr-10"></i> Custom window covering design</li>
 												</ul>
 											</div>
 											<div class="col-md-6">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
-												<p>Quo expedita tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
+												<p>We are all about custom and service. Whether you enjoy surrounding yourself with time honored traditional design, or inspired, modern, cutting edge couture; it’s our ultimate goal to design spaces that reflect your taste and lifestyle. </p>
+												<p>Whether your project involves a living room, family room, dining room, bedroom or office we have the products and ideas to suit your every need.</p>
 												<a href="page-services.html" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
 									<div class="tab-pane fade" id="tab2">
-										<h1 class="text-center title">Top Notch 24/7 Support</h1>
+										<h1 class="text-center title">How We Work</h1>
 										<div class="space"></div>
 										<div class="row">
 											<div class="col-md-6">
 												<ul class="list-icons">
-													<li><i class="icon-check pr-10"></i> Consectetur adipisicing elit</li>
-													<li><i class="icon-check pr-10"></i> Aut earum numquam hic placeat</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Vitae magnam commodi repellendus</li>
-													<li><i class="icon-check pr-10"></i> Expedita placeat omnis pariatur</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Lorem ipsum dolor sit amet maiores</li>
+													<li><i class="icon-check pr-10"></i>Initial complimentary design appointment...</li>
+													<li><i class="icon-check pr-10"></i>We listen to your design dreams and create a customized...</li>
+													<li><i class="icon-check pr-10"></i> We’ll work with you to help visualize a design solution...</li>
+													<li><i class="icon-check pr-10"></i> Then we coordinate everything...</li>
+													<li><i class="icon-check pr-10"></i>And the best part, we handle it all...</li>
 												</ul>
 											</div>
 											<div class="col-md-6">
-												<p>Dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
-												<p>Expedita tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
+												<p>Each home starts with a personalized concept that directly correlates to these needs of our clients and their individual style.    </p>
+												<p>We rely on our professional knowledge and advanced experience in the design field to walk our clients through the process of interior remodeling, new construction, and interior finishing with exceptional customer service.</p>
 												<a href="page-services.html" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
 									<div class="tab-pane fade" id="tab3">
-										<h1 class="text-center title">100% Responsive</h1>
+										<h1 class="text-center title">What design challenges can we help you with?</h1>
 										<div class="space"></div>
 										<div class="row">
 											<div class="col-md-6">
 												<ul class="list-icons">
-													<li><i class="icon-check pr-10"></i> Aut earum numquam hic placeat</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Vitae magnam commodi repellendus</li>
-													<li><i class="icon-check pr-10"></i> Expedita placeat omnis pariatur</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Lorem ipsum dolor sit amet maiores</li>
-													<li><i class="icon-check pr-10"></i> Consectetur adipisicing elit</li>
+													<li><i class="icon-check pr-10"></i> Decorate a room from scratch</li>
+													<li><i class="icon-check pr-10"></i> Choose a color scheme</li>
+													<li><i class="icon-check pr-10"></i> Rework the layout</li>
+													<li><i class="icon-check pr-10"></i>Finish a room with designer touches</li>
+													<li><i class="icon-check pr-10"></i>Update for the season </li>
+													<li><i class="icon-check pr-10"></i> style a wall with art & accessories</li>
+													<li><i class="icon-check pr-10"></i>Find the perfect furniture or decor piece</li>
+													<li><i class="icon-check pr-10"></i> Select kitchen or bathroom finishes </li>
 												</ul>
 											</div>
 											<div class="col-md-6">
-												<p>Ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
-												<p>Tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
+												<p>We pride ourselves on working collaboratively with our clients to find the perfect products that satisfy their design style and budget. We make the interior design process easy and fun. </p>
+												<p>That way we can select the colors and textures in the comfort of your own environment with your lighting, space and lifestyle right there to guide our ultimate design and product decisions. What could be easier?</p>
 												<a href="page-services.html" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane fade" id="tab4">
-										<h1 class="text-center title">Well Documented</h1>
-										<div class="space"></div>
-										<div class="row">
-											<div class="col-md-6">
-												<ul class="list-icons">
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Vitae magnam commodi repellendus</li>
-													<li><i class="icon-check pr-10"></i> Expedita placeat omnis pariatur</li>
-													<li><i class="icon-check pr-10"></i> Fugiat rem consequatur neque</li>
-													<li><i class="icon-check pr-10"></i> Lorem ipsum dolor sit amet maiores</li>
-													<li><i class="icon-check pr-10"></i> Consectetur adipisicing elit</li>
-													<li><i class="icon-check pr-10"></i> Aut earum numquam hic placeat</li>
-												</ul>
-											</div>
-											<div class="col-md-6">
-												<p>Sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
-												<p>Modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
-												<a href="page-services.html" class="btn btn-default">Read more</a>
-											</div>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 							<!-- tabs end -->
@@ -404,11 +381,11 @@
 
 							<h2>Our Work</h2>
 							<div class="separator-2"></div>
-							<p>Sed ut Perspiciatis Unde Omnis Iste Sed ut sit  voluptatem accusan tium </p>
+							<p>We are experts that have come together to give out genius solutions to our clients. You'll love our work. Browse our portfolio! </p>
 							<div class="owl-carousel carousel">
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="300">
 									<div class="overlay-container">
-										<img src="images/portfolio-1.jpg" alt="">
+										<img src="images/living-room_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -417,14 +394,15 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Living Room</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
+
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="200">
 									<div class="overlay-container">
-										<img src="images/portfolio-2.jpg" alt="">
+										<img src="images/bedroom_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -433,14 +411,15 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Bedroom</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
+
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="100">
 									<div class="overlay-container">
-										<img src="images/portfolio-3.jpg" alt="">
+										<img src="images/dinning_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -449,14 +428,15 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Dinning</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
+
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">
 									<div class="overlay-container">
-										<img src="images/portfolio-4.jpg" alt="">
+										<img src="images/kitchen_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -465,14 +445,15 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Kitchen</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
+
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/portfolio-5.jpg" alt="">
+										<img src="images/bathroom_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -481,14 +462,14 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Bathroom & Toilet</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/portfolio-6.jpg" alt="">
+										<img src="images/office_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -497,14 +478,14 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Office</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/portfolio-7.jpg" alt="">
+										<img src="images/foyer_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -513,14 +494,14 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Foyer</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/portfolio-8.jpg" alt="">
+										<img src="images/other_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
@@ -529,7 +510,7 @@
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Project Title</a></h3>
+										<h3 class="title"><a href="portfolio-item.html">Other Works</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
 										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
 									</div>
@@ -578,8 +559,9 @@
 						</div>
 						<div class="col-md-6">
 							<blockquote class="inline">
-								<p class="margin-clear">Design is not just what it looks like and feels like. Design is how it works.</p>	
-								<footer><cite title="Source Title">Steve Jobs </cite></footer>
+								<p class="margin-clear">"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+</p>	
+								<footer><cite title="Source Title">ANTOINE DE SAINT-EXUPÉRY </cite></footer>
 							</blockquote>
 						</div>
 					</div>

@@ -21,11 +21,11 @@
                                                                             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                                                                 <ul class="nav navbar-nav ">
                                                                         @guest 
-                                                                        <li class=" active"> <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a></li>
-                                                                        <li class=""> <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a> </li>
-                                                                        <li class=""> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a> </li>
-                                                                        <li class=""> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a> </li>  
-                                                                        <li class=""> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a> </li>  
+                                                                        <li class=" active"> <a href="/" class="dropdown-toggle" data-toggle="dropdown">Home</a></li>
+                                                                        <li class=""> <a href="/welcome/about" class="dropdown-toggle" data-toggle="dropdown">About</a> </li>
+                                                                        <li class=""> <a href="/welcome/services" class="dropdown-toggle" data-toggle="dropdown">Services</a> </li>
+                                                                        <li class=""> <a href="/welcome/portofolio" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a> </li>  
+                                                                        <li class=""> <a href="/welcome/contact" class="dropdown-toggle" data-toggle="dropdown">Contact</a> </li>  
 
 
                                                                         @else 
