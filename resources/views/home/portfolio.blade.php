@@ -20,12 +20,8 @@
                      
            
 
-     
-
-      <div class="row text-center text-lg-left">
-
-
-
+<!--    
+       <div class="row text-center text-lg-left">
       @if( $pics && count($pics) > 0 )
 
       @foreach($pics as $pic)
@@ -35,6 +31,22 @@
          <i class="fa fa-search-plus"></i>
        </a>
        <div class="text-center"><a href="#"><i class="fa fa-trash"></i> trash</a></div>
+     </div>
+    @endforeach
+     @endif    
+      </div> -->
+  
+
+      <div class="row text-center text-lg-left">
+      @if( $pics && count($pics) > 0 )
+      @foreach($pics as $pic)
+       <div class="col-lg-3 col-md-4 col-xs-6">
+       <img  class="thumbnail" src="{{ asset("images/thumb/$pic->picture")}}" alt="">
+       <form class="form-horizontal push-5-t" action="{{ url('home/portfolio/'.$pic->id) }}" method="POST">
+                        <input type="hidden" name="_method" value="delete" />    
+                        {{csrf_field()}}      
+                        <button type="submit" onclick="javascript:return confirm('Are you sure to delete ')" class="label label-danger"> <i class="fa fa-trash-o"></i></button> 
+                        </form>  
      </div>
     @endforeach
 

@@ -59,4 +59,5 @@ Route::group(['prefix' => 'home'], function () {
     Route::post('create-portfolio', 'HomeController@postPortfolio')->name('post.portfolio');
 
     Route::get('portfolio/{any}', 'HomeController@categoryPortfolio')->name('category.portfolio');
+    Route::delete('portfolio/{id}', 'HomeController@deletePortfolio')->name('delete.portfolio');
 });

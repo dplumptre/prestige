@@ -195,6 +195,22 @@ class HomeController extends Controller
     }
 
 
+    public function deletePortfolio($id)
+    {
+        // return $id;
+
+      $data = Picture::find($id);
+      $data->delete();
+
+      $path1 = "images/thumb/" .$data->picture;
+      $path2 = "images/pics/" .$data->picture; 
+
+      // remove the pics from the folder  
+      unlink($path1);    
+      unlink($path2); 
+       
+      return redirect()->back();
+    }
 
 
     public function categoryPortfolio($cat)
