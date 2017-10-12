@@ -885,6 +885,26 @@ tbody {
 	background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;
 }
 
+.parallax-bg-11 {
+	background: url("../images/parallax-bg-11.jpg") 50% 0px no-repeat;
+}
+
+.parallax-bg-5 {
+	background: url("../images/parallax-bg-5.png") 50% 0px no-repeat;
+}
+
+.parallax-bg-6 {
+	background: url("../images/parallax-bg-6.png") 50% 0px no-repeat;
+}
+
+.parallax-bg-7 {
+	background: url("../images/parallax-bg-7.png") 50% 0px no-repeat;
+}
+
+.parallax-bg-8 {
+	background: url("../images/parallax-bg-8.png") 50% 0px no-repeat;
+}
+
 /* Custom Grid
 ---------------------------------- */
 .grid-space-20 {

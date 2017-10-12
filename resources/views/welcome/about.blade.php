@@ -5,10 +5,10 @@
  <!-- banner start -->
 			<!-- ================ -->
 			<div class="banner">
-				<div class="fixed-image section dark-translucent-bg" style="background-image:url('images/page-about-banner-1.jpg');">
+				<div class="fixed-image section dark-translucent-bg parallax-bg-5">
 					<div class="container">
 					<div class="space-top"></div>
-					<h1>Welcome to Prestige</h1>
+					<h1>About</h1>
 					<div class="separator-2"></div>
 					<p class="lead">Prestige International is a full-service interior design firm specialized in <br class="hidden-xs hidden-sm"> seamlessly executing luxury interior designs that reflect each client's individual needs.</p>
 					</div>
@@ -22,10 +22,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="index.html">Home</a></li>
-								<li class="active">About Us</li>
-							</ol>
+							<?php breadcrumb(); ?>
 						</div>
 					</div>
 				</div>
@@ -46,7 +43,7 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">About Us</h1>
+							<h1 class="page-title">Who We Are</h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
@@ -65,18 +62,24 @@
 										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>Small and large-scale renovations</li>
 										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>Custom window covering design</li>
 									</ul>
-									<a class="btn btn-lg btn-default" href="page-team.html"><i class="fa fa-users pr-10"></i> Our Team</a>
+									
 								</div>
 
 								<!-- sidebar start -->
 								<aside class="sidebar col-md-6">
 									<div class="side vertical-divider-left">
 										<div class="block clearfix">
-											<h3 class="title margin-top-clear">Intro Video</h3>
-											<div class="embed-responsive embed-responsive-16by9">
-												<iframe class="embed-responsive-item" src="//player.vimeo.com/video/29198414?byline=0&amp;portrait=0"></iframe>
-												<p><a href="http://vimeo.com/29198414">Introducing Vimeo Music Store</a> from <a href="http://vimeo.com/staff">Vimeo Staff</a> on <a href="https://vimeo.com">Vimeo</a>.</p>  
-											</div>
+											<div class="owl-carousel content-slider">
+												<div class="overlay-container">
+													<img src="images/about1-1.jpg" alt="">
+												</div>
+												<div class="overlay-container">
+													<img src="images/about-2.jpg" alt="">
+												</div>
+												<div class="overlay-container">
+													<img src="about-3.jpg" alt="">
+												</div>
+											</div> 
 										</div>
 									</div>
 								</aside>
@@ -91,82 +94,28 @@
 			</section>
 			<!-- main-container end -->
 
-<!-- section start -->
-			<!-- ================ -->
-			<div class="section gray-bg clearfix">
-				<div class="container">
-					<h2 class="title">Our Team</h2>
-					<div class="separator-2"></div>
-					<p class="lead">See the experts behind giving genius solutions to our clients. </p>
-					<div class="row grid-space-20">
-						<div class="col-md-3 col-sm-6">
-							<div class="box-style-1 white-bg team-member">
-								<div class="overlay-container">
-									<img src="images/team-member-1.jpg" alt="">
-									<div class="overlay">
-										<ul class="social-links clearfix">
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										</ul>
+<section class="main-container dark-bg pattern-6">
+<!-- main start -->
+				<!-- ================ -->
+				<div class="main">
+					<div class="container">
+						<div class="call-to-action">
+							<div class="row">
+								<div class="col-md-8">
+									<h1 class="title text-center">We offer more possibilities to meet your every need.</h1>
+								</div>
+								<div class="col-md-4">
+									<div class="text-center">
+										<a href="/welcome/contact" class="btn btn-white btn-lg">Contact us</a>
 									</div>
 								</div>
-								<h3>John Doe</h3>
-								CEO
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="box-style-1 white-bg team-member">
-								<div class="overlay-container">
-									<img src="images/team-member-2.jpg" alt="">
-									<div class="overlay">
-										<ul class="social-links clearfix">
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h3>Jane Doe</h3>
-								CTO
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="box-style-1 white-bg team-member">
-								<div class="overlay-container">
-									<img src="images/team-member-3.jpg" alt="">
-									<div class="overlay">
-										<ul class="social-links clearfix">
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h3>Smith Doel</h3>
-								Project Manager
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="box-style-1 white-bg team-member">
-								<div class="overlay-container">
-									<img src="images/team-member-4.jpg" alt="">
-									<div class="overlay">
-										<ul class="social-links clearfix">
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h3>Margaret Doe</h3>
-								Interior Designer
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- section end -->
+				<!-- main end -->
+				</section>
+
 
 			<!-- section start -->
 			<!-- ================ -->

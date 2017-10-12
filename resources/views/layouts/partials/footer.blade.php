@@ -16,7 +16,8 @@
                                                 <div class="logo-footer"><img id="logo-footer" src="images/logo_red_footer.png" alt=""></div>
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                                        <p>Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</p>
+                                                        <p>Enjoy our 24/7 top notch customer service for all your enquiries. Fill our contact form, and we'll contact you within 24 hours.
+                                                        Like/follow us on any of our social media</p>
                                                         <ul class="social-links circle">
                                                             <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                                                             <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
@@ -43,11 +44,11 @@
                                                 <h2>Links</h2>
                                                 <nav>
                                                     <ul class="nav nav-pills nav-stacked">
-                                                        <li><a href="index.html">Home</a></li>
-                                                        <li class="active"><a href="blog-right-sidebar.html">Blog</a></li>
-                                                        <li><a href="portfolio-3col.html">Portfolio</a></li>
-                                                        <li><a href="page-about.html">About</a></li>
-                                                        <li><a href="page-contact.html">Contact</a></li>
+                                                        <li><a href="/">Home</a></li>
+                                                        <li class="active"><a href="/welcome/about">Who we are</a></li>
+                                                        <li><a href="/welcome/services">What we do</a></li>
+                                                        <li><a href="/welcome/portfolio">Portofolio</a></li>
+                                                        <li><a href="/welcome/contact">Where we are</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -143,7 +144,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <p>Copyright © 2016 iDea by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>. All Rights Reserved</p>
+                                            <p>Copyright © 2017 Prestige International. All Rights Reserved</p>
                                         </div>
                                         <div class="col-md-6">
                                             <nav class="navbar navbar-default" role="navigation">
@@ -158,11 +159,11 @@
                                                 </div>   
                                                 <div class="collapse navbar-collapse" id="navbar-collapse-2">
                                                     <ul class="nav navbar-nav">
-                                                        <li><a href="index.html">Home</a></li>
-                                                        <li><a href="page-about.html">About</a></li>
-                                                        <li><a href="blog-right-sidebar.html">Blog</a></li>
-                                                        <li><a href="portfolio-3col.html">Portfolio</a></li>
-                                                        <li><a href="page-contact.html">Contact</a></li>
+                                                        <li><a href="/">Home</a></li>
+                                                        <li><a href="/welcome/about">About</a></li>
+                                                        <li><a href="/welcome/services">Services</a></li>
+                                                        <li><a href="/welcome/portfolio">Portfolio</a></li>
+                                                        <li><a href="/welcome/contact">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav>

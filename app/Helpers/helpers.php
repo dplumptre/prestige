@@ -1,6 +1,15 @@
 <?php
 
 
+function breadcrumb()
+{
+  echo "<ol class=\"breadcrumb\">
+			<li><i class=\"fa fa-home pr-10\"></i><a href=\"/\">Home</a></li>
+			<li class=\"active\">Contact</li>
+	</ol>";
+}
+
+
  function slugify($text)
 {
   // replace non letter or digits by -

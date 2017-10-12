@@ -24,18 +24,22 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="myModalLabel">iDea Clean and Unique Design</h4>
+												<h4 class="modal-title" id="myModalLabel">How We Work</h4>
 											</div>
 											<div class="modal-body">
-												<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-												<ul class="list-icons">
-													<li><i class="icon-check"></i> Nisi minima blanditiis voluptate</li>
-													<li><i class="icon-check"></i> Officiis nisi nam doloribus explicabo</li>
-													<li><i class="icon-check"></i> Debitis delectus corporis aspernatur</li>
-													<li><i class="icon-check"></i> Dolore temporibus odio distinctio</li>
-													<li><i class="icon-check"></i> Reprehenderit optio unde accusantium quia</li>
-												</ul>
-												<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+												<p>
+									Each home starts with a personalized concept that directly correlates to these needs of our clients and their individual style. 
+									<p>We rely on our professional knowledge and advanced experience in the design field to walk our clients through the process of interior remodeling, new construction, and interior finishing with exceptional customer service.
+									<p>We bring our professional years of interior design experience right to your home or office. Our design professionals are equipped to help you determine the product and design that work best for you within the colors and lighting of your surroundings.
+								</p>
+								<h4>The process we follow</h4>
+							<ul class="list-icons">
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i>We start with an initial complimentary design appointment scheduled at your convenience.  </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i>We listen to your design dreams and create a customized, functional design and product plan just for YOU. </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="icon-check"></i>We’ll work with you to help visualize a design solution that aligns with your taste, space, and budget.</li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>Then we coordinate everything – from measuring, product ordering and finally to installation. </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>And the best part, we handle it all, helping to make your life easier and save you valuable time and money.</li>
+									</ul>
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal"><i class="icon-check"></i> Ok</button>
@@ -44,7 +48,7 @@
 									</div>
 								</div>
 								or
-								<a href="page-contact.html" class="btn btn-default contact">Contact us <i class="pl-10 fa fa-phone"></i></a>
+								<a href="/welcome/contact" class="btn btn-default contact">Contact us <i class="pl-10 fa fa-phone"></i></a>
 							</div>
 						</div>
 					</div>
@@ -71,7 +75,7 @@
 											<img src="images/feature-1.jpg" alt="" class="fa">
 											<h2>Custom furniture design</h2>
 											<p> Individual furniture items, kitchen and bath cabinetry, Custom window covering design</p>
-											<a href="page-services.html" class="btn-default btn">Read More</a>
+											<a href="/welcome/services" class="btn-default btn">Read More</a>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -79,7 +83,7 @@
 											<img src="images/feature-2.jpg" alt="" class="fa">
 											<h2>Art acquisition </h2>
 											<p>We help in identifying client's personal art style, shopping, sourcing and design integration</p>
-											<a href="page-services.html" class="btn-default btn">Read More</a>
+											<a href="/welcome/services" class="btn-default btn">Read More</a>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -87,7 +91,7 @@
 											<img src="images/feature-3.jpg" alt="" class="fa">
 											<h2>Color consulting </h2>
 											<p>We help you choose the right colour scheme, Paint, update for the season... </p>
-											<a href="page-services.html" class="btn-default btn">Read More</a>
+											<a href="/welcome/services" class="btn-default btn">Read More</a>
 										</div>
 									</div>
 								</div>
@@ -122,7 +126,7 @@
 										</div>
 									</div>
 									<p>By establishing a foundation of trust and transparency with each client, we ensure that projects are completed on budget and on time.  </p>
-									<a href="page-about.html" class="btn btn-white">Learn More</a>
+									<a href="/welcome/about" class="btn btn-white">Learn More</a>
 									<div class="space hidden-md hidden-lg"></div>
 								</div>
 								<div class="col-md-6">
@@ -179,26 +183,6 @@
 			</div>
 			<!-- section end -->
 
-			<!-- section start -->
-			<!-- ================ -->
-			<div class="section parallax light-translucent-bg parallax-bg-3">
-				<div class="container">
-					<div class="call-to-action">
-						<div class="row">
-							<div class="col-md-8">
-								<h1 class="title text-center">Clean &amp; Powerful Bootstrap Theme</h1>
-								<p class="text-center">Sed ut Perspiciatis Unde Omnis Iste Sed ut sit  voluptatem accusan tium </p>
-							</div>
-							<div class="col-md-4">
-								<div class="text-center">
-									<a href="#" class="btn btn-default btn-lg">Purchase</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- section end -->
 
 			<!-- section start -->
 			<!-- ================ -->
@@ -211,18 +195,12 @@
 							<div class="separator"></div>
 							<p class="lead text-center">We specialize in one thing "prestigious designs" using a fresh & sophisticated approach <br>to designing contemporary environments.</p>
 							
+							
 							<!-- Tabs start -->
 							<!-- ================ -->
 							<div class="vertical hc-tabs">
 
-								<!-- Tabs Top -->
-								<div class="hc-tabs-top">
-									<img data-tab="#tab1" src="images/section-image-1.png" alt="iDea" data-tab-animation-effect="fadeInRightSmall">
-									<img data-tab="#tab2" src="images/section-image-2.png" alt="iDea" data-tab-animation-effect="fadeInRightSmall">
-									<img data-tab="#tab3" src="images/section-image-3.png" alt="iDea" data-tab-animation-effect="fadeInRightSmall">
-									<img data-tab="#tab4" src="images/section-image-4.png" alt="iDea" data-tab-animation-effect="fadeInRightSmall">
-									<div class="space"></div>
-								</div>
+							
 								
 								<!-- Tabs Arrow -->
 								<div class="arrow hidden-sm hidden-xs"><i class="fa fa-caret-up"></i></div>
@@ -254,7 +232,7 @@
 											<div class="col-md-6">
 												<p>We are all about custom and service. Whether you enjoy surrounding yourself with time honored traditional design, or inspired, modern, cutting edge couture; it’s our ultimate goal to design spaces that reflect your taste and lifestyle. </p>
 												<p>Whether your project involves a living room, family room, dining room, bedroom or office we have the products and ideas to suit your every need.</p>
-												<a href="page-services.html" class="btn btn-default">Read more</a>
+												<a href="/welcome/services" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
@@ -274,7 +252,7 @@
 											<div class="col-md-6">
 												<p>Each home starts with a personalized concept that directly correlates to these needs of our clients and their individual style.    </p>
 												<p>We rely on our professional knowledge and advanced experience in the design field to walk our clients through the process of interior remodeling, new construction, and interior finishing with exceptional customer service.</p>
-												<a href="page-services.html" class="btn btn-default">Read more</a>
+												<a href="/welcome/services" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
@@ -297,7 +275,7 @@
 											<div class="col-md-6">
 												<p>We pride ourselves on working collaboratively with our clients to find the perfect products that satisfy their design style and budget. We make the interior design process easy and fun. </p>
 												<p>That way we can select the colors and textures in the comfort of your own environment with your lighting, space and lifestyle right there to guide our ultimate design and product decisions. What could be easier?</p>
-												<a href="page-services.html" class="btn btn-default">Read more</a>
+												<a href="/welcome/services" class="btn btn-default">Read more</a>
 											</div>
 										</div>
 									</div>
@@ -388,15 +366,15 @@
 										<img src="images/living-room_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-1.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Living Room</a></h3>
+										<h3 class="title"><a href="/welcome/portfolio">Living Room</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 
@@ -405,15 +383,15 @@
 										<img src="images/bedroom_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-2.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Bedroom</a></h3>
+										<h3 class="title"><a href="/welcome/portfolio">Bedroom</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 
@@ -422,15 +400,15 @@
 										<img src="images/dinning_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-3.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Dinning</a></h3>
+										<h3 class="title"><a href="/welcome/portfolio">Dinning</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 
@@ -439,15 +417,15 @@
 										<img src="images/kitchen_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-4.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Kitchen</a></h3>
+										<h3 class="title"><a href="/welcome/services">Kitchen</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/services" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 
@@ -456,15 +434,15 @@
 										<img src="images/bathroom_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-5.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Bathroom & Toilet</a></h3>
+										<h3 class="title"><a href="/welcome/services">Bathroom & Toilet</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/services" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -472,15 +450,15 @@
 										<img src="images/office_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-6.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Office</a></h3>
+										<h3 class="title"><a href="/welcome/services">Office</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/services" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -488,15 +466,15 @@
 										<img src="images/foyer_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-7.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Foyer</a></h3>
+										<h3 class="title"><a href="/welcome/services">Foyer</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/services" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -504,15 +482,15 @@
 										<img src="images/other_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="portfolio-item.html"><i class="fa fa-link"></i></a>
+												<a href="/welcome/services"><i class="fa fa-link"></i></a>
 												<a href="images/portfolio-8.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="image-box-body">
-										<h3 class="title"><a href="portfolio-item.html">Other Works</a></h3>
+										<h3 class="title"><a href="/welcome/services">Other Works</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="portfolio-item.html" class="link"><span>Read More</span></a>
+										<a href="/welcome/services" class="link"><span>Read More</span></a>
 									</div>
 								</div>
 							</div>
@@ -524,8 +502,5 @@
 			</div>
 			<!-- section end -->
 
-
-
-			@section('footer')
 
             @endsection

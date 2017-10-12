@@ -24,7 +24,7 @@
                                                 data-speed="600"
                                                 data-start="1200"
                                                 data-end="9400"
-                                                data-endspeed="600">Premium HTML5 template
+                                                data-endspeed="600">What design challenge can we help you with?
                                             </div>
             
                                             <!-- LAYER NR. 2 -->
@@ -44,7 +44,7 @@
                                                 data-speed="600"
                                                 data-start="1600"
                                                 data-end="9400"
-                                                data-endspeed="600">100% Responsive
+                                                data-endspeed="600">Decorate a room from scratch.
                                             </div>
             
                                             <!-- LAYER NR. 4 -->
@@ -64,7 +64,7 @@
                                                 data-speed="600"
                                                 data-start="1800"
                                                 data-end="9400"
-                                                data-endspeed="600">Bootstrap Based
+                                                data-endspeed="600">Finish a room with designer touches
                                             </div>
             
                                             <!-- LAYER NR. 6 -->
@@ -84,7 +84,7 @@
                                                 data-speed="600"
                                                 data-start="2000"
                                                 data-end="9400"
-                                                data-endspeed="600">Packed Full of Features
+                                                data-endspeed="600">Style a wall with art & accessories
                                             </div>
             
                                             <!-- LAYER NR. 8 -->
@@ -104,7 +104,7 @@
                                                 data-speed="600"
                                                 data-start="2200"
                                                 data-end="9400"
-                                                data-endspeed="600">Very Easy to Customize
+                                                data-endspeed="600">Find the perfect furniture or decor piece
                                             </div>
             
                                             <!-- LAYER NR. 10 -->
@@ -114,7 +114,7 @@
                                                 data-speed="600"
                                                 data-start="2400"
                                                 data-end="9400"
-                                                data-endspeed="600">And Much More...
+                                                data-endspeed="600">Contact us today
                                             </div>
             
                                             <!-- LAYER NR. 11 -->
@@ -143,7 +143,7 @@
                                                 data-speed="600"
                                                 data-start="1200"
                                                 data-end="9400"
-                                                data-endspeed="600">Powerful Bootstrap Theme
+                                                data-endspeed="600">Enjoy our Exclusive Features
                                             </div>
             
                                             <!-- LAYER NR. 2 -->
@@ -163,7 +163,7 @@
                                                 data-speed="600"
                                                 data-start="1600"
                                                 data-end="9400"
-                                                data-endspeed="600">W3C Validated
+                                                data-endspeed="600">Custom furniture design
                                             </div>
             
                                             <!-- LAYER NR. 4 -->
@@ -183,7 +183,7 @@
                                                 data-speed="600"
                                                 data-start="1800"
                                                 data-end="9400"
-                                                data-endspeed="600">Unlimited layout variations
+                                                data-endspeed="600">Art acquisition
                                             </div>
             
                                             <!-- LAYER NR. 6 -->
@@ -203,7 +203,7 @@
                                                 data-speed="600"
                                                 data-start="2000"
                                                 data-end="9400"
-                                                data-endspeed="600">Google Maps
+                                                data-endspeed="600">Color consulting
                                             </div>
             
                                             <!-- LAYER NR. 8 -->
@@ -223,7 +223,7 @@
                                                 data-speed="600"
                                                 data-start="2200"
                                                 data-end="9400"
-                                                data-endspeed="600">Very Flexible
+                                                data-endspeed="600">Small and large-scale renovations
                                             </div>
             
                                             <!-- LAYER NR. 10 -->
@@ -233,7 +233,7 @@
                                                 data-speed="600"
                                                 data-start="2400"
                                                 data-end="9400"
-                                                data-endspeed="600">And Much More...
+                                                data-endspeed="600">Don't Miss Out!
                                             </div>
             
                                             <!-- LAYER NR. 11 -->
@@ -262,7 +262,7 @@
                                                 data-speed="600"
                                                 data-start="1200"
                                                 data-end="9400"
-                                                data-endspeed="600">Clean &amp; Unique Design
+                                                data-endspeed="600">We Understand Design
                                             </div>
             
                                             <!-- LAYER NR. 2 -->
@@ -282,7 +282,7 @@
                                                 data-speed="600"
                                                 data-start="1600"
                                                 data-end="9400"
-                                                data-endspeed="600">After Sale Support
+                                                data-endspeed="600">What to design
                                             </div>
             
                                             <!-- LAYER NR. 4 -->
@@ -302,7 +302,7 @@
                                                 data-speed="600"
                                                 data-start="1800"
                                                 data-end="9400"
-                                                data-endspeed="600">Crystal Clean Code
+                                                data-endspeed="600"> When to design it
                                             </div>
             
                                             <!-- LAYER NR. 6 -->
@@ -322,7 +322,7 @@
                                                 data-speed="600"
                                                 data-start="2000"
                                                 data-end="9400"
-                                                data-endspeed="600">Crossbrowser Compatible
+                                                data-endspeed="600">How to design it.
                                             </div>
             
                                             <!-- LAYER NR. 8 -->
@@ -342,7 +342,7 @@
                                                 data-speed="600"
                                                 data-start="2200"
                                                 data-end="9400"
-                                                data-endspeed="600">Latest Technologies Used
+                                                data-endspeed="600"> Whom it should be designed for.
                                             </div>
             
                                             <!-- LAYER NR. 10 -->
@@ -352,22 +352,18 @@
                                                 data-speed="600"
                                                 data-start="2400"
                                                 data-end="9400"
-                                                data-endspeed="600">Don't miss out!
+                                                data-endspeed="600">And Much More...
                                             </div>
             
                                             <!-- LAYER NR. 11 -->
-                                            <div class="tp-caption sfr"
-                                                data-x="right" data-hoffset="-660"
+                                            <div class="tp-caption sfr tp-resizeme"
+                                                data-x="right"
                                                 data-y="center" 
                                                 data-speed="600"
                                                 data-start="2700"
-                                                data-endspeed="600"
-                                                data-autoplay="false"
-                                                data-autoplayonlyfirsttime="false"
-                                                data-nextslideatend="true">
-                                                <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe class="embed-responsive-item" src='https://www.youtube.com/embed/91J8pLHdDB0?enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;controls=1&amp;showinfo=0;rel=0;' width='640' height='360' style='width:640px;height:360px;'></iframe>
-                                                </div>
+                                                data-end="9400"
+                                                data-endspeed="600"><img src="images/slider-1-layer-3.png" alt="">
+                                            </div>
                                             </div>
             
                                             </li>
