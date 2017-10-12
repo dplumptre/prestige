@@ -38,11 +38,12 @@
      
 
        <div class="col-lg-3 col-md-4 col-xs-6">
-       <img   src="{{asset('images/thumb/'.$pic->pictures[$i]->picture)}}" alt="">
-       <a href="{{ asset('images/pics/'.$pic->pictures[$i]->picture)}}" class="overlay small popup-img" title="">
-         <i class="fa fa-search-plus"></i>
-       </a>
-       <div class="text-center"><a href="#"><i class="fa fa-trash"></i> trash</a></div>
+       <img class="thumbnail"   src="{{asset('images/thumb/'.$pic->pictures[$i]->picture)}}" alt="">
+       <form class="form-horizontal push-5-t" action="{{ url('home/portfolio/'.$pic->pictures[$i]->id) }}" method="POST">
+                        <input type="hidden" name="_method" value="delete" />    
+                        {{csrf_field()}}      
+                        <button type="submit" onclick="javascript:return confirm('Are you sure to delete ')" class="label label-danger"> <i class="fa fa-trash-o"></i></button> 
+                        </form>  
      </div>
          
 @endfor
