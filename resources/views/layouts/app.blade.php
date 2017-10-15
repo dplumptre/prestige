@@ -11,7 +11,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'PRESTIGE') }}</title>
+    <title>Prestige International</title>
 		<meta name="description" content="interior decoration">
 		<meta name="author" content="htmlcoder.me">
 

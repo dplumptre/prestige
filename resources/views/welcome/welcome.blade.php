@@ -3,7 +3,8 @@
 @section('content')
 
 @include('layouts.partials.slides')
-	
+
+@foreach($contents as $content)
 
 			<!-- page-top start-->
 			<!-- ================ -->
@@ -135,13 +136,13 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-														<i class="fa fa-bold"></i>Our Strength
+														<i class="fa fa-bold"></i><?php strip_content("$content->section3_tab1_heading")?>
 													</a>
 												</h4>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse in">
 												<div class="panel-body">
-													We have a team of professionals, energetic individual’s, talented designers and experienced managers available to guide our client’s through the flawless and timely execution of any design project. Our team takes pride in creating luxurious and innovative homes that have a very intimate connection to our clients and their families.  
+													<?php strip_content("$content->section3_tab1_content")?> 
 												</div>
 											</div>
 										</div>
@@ -149,13 +150,12 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-														<i class="fa fa-leaf"></i>We understand client needs
+														<i class="fa fa-leaf"></i><?php strip_content("$content->section3_tab2_heading")?>
 													</a>
 												</h4>
 											</div>
 											<div id="collapseTwo" class="panel-collapse collapse">
-												<div class="panel-body">
-													We understand each project we begin has specific needs, budgets, and a level of quality with the work involved. We also understand that not all of our clients will have the same needs, but that’s where we tailor our services to your requirements. Often clients will insist that interior decorators use the products already present in the house. Other times a designer will need to start from scratch — especially if this is a newly purchased or just-built home. Prestige will figure out exactly what the client needs, which includes organizing rooms, picking flooring and wall colors, and finding furniture to complement it all.
+												<div class="panel-body"><?php strip_content("$content->section3_tab2_content")?>
 												</div>
 											</div>
 										</div>
@@ -163,13 +163,13 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-														<i class="fa fa-html5"></i>We understand the market
+														<i class="fa fa-html5"></i><?php strip_content("$content->section3_tab3_heading")?>
 													</a>
 												</h4>
 											</div>
 											<div id="collapseThree" class="panel-collapse collapse">
 												<div class="panel-body">
-													We understand the markets and employ the most efficient and effective methods to get to our clients’ as much as our client desires. We don’t just do design/decoration at Prestige, we live and breathe it. We only use ethical methods and rely on tried and tested techniques to enhance your exposure. 
+													<?php strip_content("$content->section3_tab3_content")?>
 												</div>
 											</div>
 										</div>
@@ -294,57 +294,26 @@
 			<!-- ================ -->
 			<div class="section gray-bg clearfix">
 				<div class="owl-carousel content-slider">
+				@foreach($testimonials as $testimonial)
 					<div class="testimonial">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
-									<h2 class="title">Just Perfect!</h2>
+									<h2 class="title"><?php strip_content("$testimonial->title") ?></h2>
 									<div class="testimonial-image">
 										<img src="images/testimonial-1.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
 									</div>
 									<div class="testimonial-body">
-										<p>Sed ut perspiciatis unde omnis iste natu error sit voluptatem accusan tium dolore laud antium,  totam rem dolor sit amet tristique pulvinar, turpis arcu rutrum nunc, ac laoreet turpis augue a justo.</p>
-										<div class="testimonial-info-1">- Jane Doe</div>
-										<div class="testimonial-info-2">By Company</div>
+										<p><?php strip_content("$testimonial->content") ?></p>
+										<div class="testimonial-info-1">- <?php strip_content("$testimonial->name") ?></div>
+										<div class="testimonial-info-2"><?php strip_content("$testimonial->company") ?></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="testimonial">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<h2 class="title">Wow amazing!</h2>
-									<div class="testimonial-image">
-										<img src="images/testimonial-2.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
-									</div>
-									<div class="testimonial-body">
-										<p>Turpis arcu rutrum nunc, ac laoreet turpis augue a justo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, esse, animi maxime voluptate tempore at sunt labore incidunt nulla dignissimos iusto ad similique inventore distinctio quam repellendus itaque minus minima.</p>
-										<div class="testimonial-info-1">- John Doe</div>
-										<div class="testimonial-info-2">By Company</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="testimonial">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<h2 class="title">Thanks!</h2>
-									<div class="testimonial-image">
-										<img src="images/testimonial-3.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
-									</div>
-									<div class="testimonial-body">
-										<p>Phosfluorescently e-enable adaptive synergy for strategic quality vectors. Continually transform fully tested expertise with competitive technologies ac laoreet turpis augue a justo.</p>
-										<div class="testimonial-info-1">- John Doe</div>
-										<div class="testimonial-info-2">By Company</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				@endforeach
+					
 				</div>
 			</div>
 			<!-- section end -->
@@ -366,8 +335,8 @@
 										<img src="images/living-room_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="/welcome/services"><i class="fa fa-link"></i></a>
-												<a href="images/portfolio-1.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
+												<a href="/welcome/portfolio"><i class="fa fa-link"></i></a>
+												<a href="{{ asset('images/living-room_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -383,8 +352,8 @@
 										<img src="images/bedroom_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="/welcome/services"><i class="fa fa-link"></i></a>
-												<a href="images/portfolio-2.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
+												<a href="/welcome/portfolio"><i class="fa fa-link"></i></a>
+												<a href="{{ asset('images/bedroom_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -397,11 +366,11 @@
 
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="100">
 									<div class="overlay-container">
-										<img src="images/dinning_sm.jpg" alt="">
+										<img src="images/dining.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="/welcome/services"><i class="fa fa-link"></i></a>
-												<a href="images/portfolio-3.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
+												<a href="/welcome/portfolio"><i class="fa fa-link"></i></a>
+												<a href="{{ asset('images/dining.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -417,8 +386,8 @@
 										<img src="images/kitchen_sm.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
-												<a href="/welcome/services"><i class="fa fa-link"></i></a>
-												<a href="images/portfolio-4.jpg" class="popup-img"><i class="fa fa-search-plus"></i></a>
+												<a href="/welcome/portfolio"><i class="fa fa-link"></i></a>
+												<a href="{{ asset('images/kitchen.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -501,6 +470,6 @@
 
 			</div>
 			<!-- section end -->
-
+@endforeach
 
             @endsection

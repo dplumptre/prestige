@@ -28,8 +28,16 @@ Route::group(['prefix' => 'welcome'], function () {
     Route::get('about', 'WelcomeController@about')->name('about');
     Route::get('services', 'WelcomeController@services')->name('services');
     Route::get('portfolio', 'WelcomeController@portfolio')->name('welcome.portfolio');
+    Route::get('portfolio-view', 'WelcomeController@portfolio_view')->name('welcome.portfolio-view');
+    Route::get('portfolio-preview', 'WelcomeController@portfolio_preview')->name('welcome.portfolio-preview');
     Route::get('contact', 'WelcomeController@contact')->name('contact');
+
 });
+Route::get('welcome/{id}/edit_about', 'WelcomeController@edit_about');
+Route::patch('/{about_content}/edit_about', 'WelcomeController@update_about');
+
+Route::get('welcome/{id}/edit_service', 'WelcomeController@edit_service');
+Route::patch('/{service_content}/edit_service', 'WelcomeController@update_service');
 
 
 
