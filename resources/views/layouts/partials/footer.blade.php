@@ -8,14 +8,14 @@
             
                             <!-- .footer start -->
                             <!-- ================ -->
-                            <div class="footer">
+                            <div class="footer"  style="align: center">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-9">
                                             <div class="footer-content">
-                                                <div class="logo-footer"><img id="logo-footer" src="images/logo_red_footer.png" alt=""></div>
+                                                <div class="logo-footer"  style=" padding-left:6%"><img id="logo-footer" src="images/logo_red_footer.png" alt=""></div>
                                                 <div class="row">
-                                                    <div class="col-sm-6">
+                                                    <div class="col-sm-8" style="padding-right:13%; padding-left:7%">
                                                         <p>Enjoy our 24/7 top notch customer service for all your enquiries. Fill our contact form, and we'll contact you within 24 hours.
                                                         Like/follow us on any of our social media</p>
                                                         <ul class="social-links circle">
@@ -26,7 +26,7 @@
                                                             <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col-sm-6">
+                                                    <div class="col-sm-4>
                                                         <ul class="list-icons">
                                                             <li><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
                                                             <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
@@ -35,11 +35,11 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <a href="page-about.html" class="link"><span>Read More</span></a>
+                                            
                                             </div>
                                         </div>
                                         <div class="space-bottom hidden-lg hidden-xs"></div>
-                                        <div class="col-sm-6 col-md-2">
+                                        <div class="col-sm-8 col-md-2">
                                             <div class="footer-content">
                                                 <h2>Links</h2>
                                                 <nav>
@@ -54,83 +54,7 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-3 col-md-offset-1">
-                                            <div class="footer-content">
-                                                <h2>Latest Projects</h2>
-                                                <div class="gallery row">
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-1.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-2.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-3.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-4.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-5.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-6.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-7.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-8.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gallery-item col-xs-4">
-                                                        <div class="overlay-container">
-                                                            <img src="images/gallery-9.jpg" alt="">
-                                                            <a href="portfolio-item.html" class="overlay small">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="space-bottom hidden-lg hidden-xs"></div>
@@ -143,10 +67,10 @@
                             <div class="subfooter">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <p>Copyright © 2017 Prestige International. All Rights Reserved</p>
+                                        <div class="col-md-8">
+                                            <p>Copyright © 2017 Prestige International. All Rights Reserved | Site by: <a href="http://overallheuristic.com"> Overall Heuristic </a></p>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <nav class="navbar navbar-default" role="navigation">
                                                 <!-- Toggle get grouped for better mobile display -->
                                                 <div class="navbar-header">

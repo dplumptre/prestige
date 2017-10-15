@@ -7,7 +7,7 @@
             <!-- banner start -->
 			<!-- ================ -->
 			<div class="banner">
-				<div class="fixed-image section dark-translucent-bg parallax-bg-6">
+				<div class="fixed-image section dark-translucent-bg parallax-bg-11">
 					<div class="container">
 					<div class="space-top"></div>
 					<h1>Contact</h1>
@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<?php breadcrumb(); ?>
+							<?php breadcrumb('Contact'); ?>
 						</div>
 					</div>
 				</div>
@@ -44,6 +44,10 @@
 							<div class="col-sm-6">
 								<div class="footer-content">
 									<h2>Contact Us</h2>
+									<div>
+										<p>We're glad you have chosen to contact us. Please keep in mind that all informations are confidential according to our privacy policy
+									</p>
+									</div>
 									<div class="alert alert-success hidden" id="MessageSent2">
 										We have received your message, we will contact you very soon.
 									</div>

@@ -1,14 +1,21 @@
 <?php
 
 
-function breadcrumb()
+
+
+function breadcrumb($page_title)
 {
+  $title = $page_title;
   echo "<ol class=\"breadcrumb\">
 			<li><i class=\"fa fa-home pr-10\"></i><a href=\"/\">Home</a></li>
-			<li class=\"active\">Contact</li>
-	</ol>";
+			<li class=\"active\">{$title}</li>
+  </ol>";
 }
 
+function strip_content($content)
+{
+  echo strip_tags("$content", "<p><br><h1><h2><h3><h4><h5><h6>");
+}
 
  function slugify($text)
 {

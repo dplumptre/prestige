@@ -3,7 +3,7 @@
 @section('content')
 
 
-
+@foreach($contents as $content)
             <!-- banner start -->
 			<!-- ================ -->
 			<div class="banner">
@@ -12,7 +12,9 @@
 					<div class="space-top"></div>
 					<h1>Services</h1>
 					<div class="separator-2"></div>
-					<p class="lead">We specialize in one thing "...prestigious designs" using a fresh & sophisticated approach to designing contemporary <br class="hidden-xs hidden-sm"> environments.  With every project they transform each individual's lifestyle into timeless elegance & luxurious interiors while bringing their client's vision to life.</p>
+						<div  style="width: 80%">
+							<p class="lead"> <?php strip_content("$content->banner_content")?> </p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -24,7 +26,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<?php breadcrumb(); ?>
+							<?php breadcrumb('Services'); ?>
 						</div>
 					</div>
 				</div>
@@ -47,26 +49,25 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">What we do</h1>
+							<h1 class="page-title"> <?php strip_content("$content->section1_heading")?> </h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 							
 							<div class="row">
 								<div class="col-md-8">
-									<p>Whether you enjoy surrounding yourself with time honored traditional design, or inspired, modern, cutting edge couture; it’s our ultimate goal to design spaces that reflect your taste and lifestyle. Whether your project involves a living room, family room, dining room, bedroom or office we have the products and ideas to suit your every need. 
-<p>We pride ourselves on working collaboratively with our clients to find the perfect products that satisfy their design style and budget. We make the interior design process easy and fun. 
-<p>We have thousands of samples of top quality home furnishings products from drapery, blinds, shades, furniture, bedding, lighting, accessories, artwork, floor covering and wall covering from which to choose. And the best part, we bring our design ideas and samples to the most convenient showroom in the world – your home or office. 
-</p>
-									<h3>Below is our list of world class services</h3>
-									<p>We will work with you to determine a budget that accomplishes your overall project goals </p>
+								<div class="col-md-4">
+									<img src="{{ asset('images/about-2.jpg') }}" alt="">
+								</div>
+								<?php strip_content("$content->section1_content") ?>
+									
 									<ul class="list-icons">
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i> Interior Design & Construction</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i> Interior Decorating </li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="icon-check"></i>Sustainable & Universal Design</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Small and large-scale renovations</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Remodeling & Renderings</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Wine Cellar Design</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Custom window covering design</li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point1")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point2")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point3")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point4")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point5")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point6")	?></li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i><?php strip_content("$content->section1_point7")	?></li>
 									</ul>
 								</div>
 
@@ -74,16 +75,14 @@
 								<aside class="sidebar col-md-4">
 									<div class="side vertical-divider-left">
 										
-										<h3 class="title">Our Portfolio</h3>
+										<h3 class="title"><?php strip_content("$content->section2_right_heading") ?></h3>
 										<div class="separator"></div>
-											<ul class="list-icons">
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i> Living Room</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i> Bedroom </li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="icon-check"></i>Dinning Room</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Kitchen</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>Bathroom</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Foyers</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i> Offices</li>
+									<ul class="list-icons">
+									@foreach($list as $lists)
+	<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i> 
+		<?php strip_content("$lists->name") ?>
+	</li>
+									@endforeach
 									<a href="/welcome/portfolio" class="btn btn-default">View All</a>
 									</ul>
 									</div>
@@ -104,18 +103,17 @@
 			<!-- ================ -->
 			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
 				<div class="container">
-					<h1 class="text-center">Exclusive Features</h1>
+					<h1 class="text-center"><?php strip_content("$content->section3_heading") ?></h1>
 					<div class="separator"></div>
-					<p class="lead text-center">We will work with you to determine a budget that accomplishes your overall project goals</p>
+					<p class="lead text-center"><?php strip_content("$content->section3_sub_heading") ?></p>
 					<div class="row">
 						
 						<div class="col-md-12">
 							<!-- Nav tabs -->
 							<ul class="nav nav-tabs" role="tablist">
-								<li class="active"><a href="#htab1" role="tab" data-toggle="tab"><i class="fa fa-home pr-5"></i>Custom furniture design</a></li>
-								<li><a href="#htab2" role="tab" data-toggle="tab"><i class="fa fa-home pr-5"></i>Art acquisition</a></li>
-								<li><a href="#htab3" role="tab" data-toggle="tab"><i class="fa fa-user pr-5"></i>Color consulting</a></li>
-								<li><a href="#htab4" role="tab" data-toggle="tab"><i class="fa fa-user pr-5"></i>More features</a></li>
+								<li class="active"><a href="#htab1" role="tab" data-toggle="tab"><i class="fa fa-home pr-5"></i><?php strip_content("$content->section3_tab1_heading") ?></a></li>
+								<li><a href="#htab2" role="tab" data-toggle="tab"><i class="fa fa-home pr-5"></i><?php strip_content("$content->section3_tab2_heading") ?></a></li>
+								<li><a href="#htab3" role="tab" data-toggle="tab"><i class="fa fa-user pr-5"></i><?php strip_content("$content->section3_tab3_heading") ?></a></li>
 							</ul>
 							<!-- Tab panes -->
 							<div class="tab-content">
@@ -123,7 +121,7 @@
 									<div class="row">
 										<div class="col-md-12">
 											<p>
-											Individual furniture items, kitchen and bath cabinetry, Custom window covering design
+											<?php strip_content("$content->section3_tab1_content") ?>
 											</p>
 										</div>
 									</div>
@@ -132,7 +130,7 @@
 									<div class="space-bottom"></div>
 									<div class="row">
 										<div class="col-md-12">
-											<p>We help in identifying client's personal art style, shopping, sourcing and design integration</p>
+											<p><?php strip_content("$content->section3_tab2_content") ?></p>
 										</div>
 									</div>
 								</div>
@@ -140,15 +138,7 @@
 									<div class="space-bottom"></div>
 									<div class="row">
 										<div class="col-md-12">
-											<p>We help you choose the right colour scheme, Paint, update for the season.</p>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="htab4">
-									<div class="space-bottom"></div>
-									<div class="row">
-										<div class="col-md-12">
-											<p>Just incase there is more</p>
+											<p><?php strip_content("$content->section3_tab3_content") ?></p>
 										</div>
 									</div>
 								</div>
@@ -173,24 +163,23 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">The process we follow</h1>
+							<h1 class="page-title"><?php strip_content("$content->section4_heading") ?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 							
 							<div class="row">
 								<div class="col-md-8">
-								<p>
-									Each home starts with a personalized concept that directly correlates to these needs of our clients and their individual style. 
-									<p>We rely on our professional knowledge and advanced experience in the design field to walk our clients through the process of interior remodeling, new construction, and interior finishing with exceptional customer service.
-									<p>We bring our professional years of interior design experience right to your home or office. Our design professionals are equipped to help you determine the product and design that work best for you within the colors and lighting of your surroundings.
+								<div class="col-md-4">
+									<img src="{{ asset('images/about-5.jpg') }}" alt="">
+								</div>
+								<p><?php strip_content("$content->section4_content") ?>
 								</p>
-								<h3>Our process flow</h3>
 							<ul class="list-icons">
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i>We start with an initial complimentary design appointment scheduled at your convenience.  </li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i>We listen to your design dreams and create a customized, functional design and product plan just for YOU. </li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="icon-check"></i>We’ll work with you to help visualize a design solution that aligns with your taste, space, and budget.</li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>Then we coordinate everything – from measuring, product ordering and finally to installation. </li>
-										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="icon-check"></i>And the best part, we handle it all, helping to make your life easier and save you valuable time and money.</li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i><?php strip_content("$content->section4_point1") ?>  </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i><?php strip_content("$content->section4_point2") ?>  </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i><?php strip_content("$content->section4_point3") ?>  </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i><?php strip_content("$content->section4_point4") ?>  </li>
+										<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i><?php strip_content("$content->section4_point5") ?>  </li>
 									</ul>
 									<a href="/welcome/contact" class="btn btn-default">Contact us</a>
 								</div>
@@ -199,11 +188,13 @@
 								<aside class="sidebar col-md-4">
 									<div class="side vertical-divider-left">
 										
-										<h3 class="title">Testimonial</h3>
+										<h3 class="title"><?php strip_content("$content->section4_right_heading") ?></h3>
 										<div class="separator"></div>
 										<blockquote class="margin-clear">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem.</p>	
-											<footer><cite title="Source Title">Steve Doe </cite></footer>
+										@foreach($testimonials as $testimonial)
+											<p><?php strip_content("$testimonial->content") ?></p>	
+											<footer><cite title="Source Title"><?php strip_content("$testimonial->name") ?> </cite></footer>
+										@endforeach
 										</blockquote>
 									</div>
 								</aside>
@@ -218,5 +209,6 @@
 			</div>
 			<!-- section end -->
 
+@endforeach
 
-            @endsection
+@endsection
