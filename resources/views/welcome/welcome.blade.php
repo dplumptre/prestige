@@ -342,8 +342,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/portfolio">Living Room</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/portfolio" class="link"><span>View</span></a>
 									</div>
 								</div>
 
@@ -359,8 +359,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/portfolio">Bedroom</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/portfolio" class="link"><span>View</span></a>
 									</div>
 								</div>
 
@@ -376,14 +376,14 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/portfolio">Dinning</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/portfolio" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/portfolio" class="link"><span>View</span></a>
 									</div>
 								</div>
 
 								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">
 									<div class="overlay-container">
-										<img src="images/kitchen_sm.jpg" alt="">
+										<img src="images/kitchen.jpg" alt="">
 										<div class="overlay">
 											<div class="overlay-links">
 												<a href="/welcome/portfolio"><i class="fa fa-link"></i></a>
@@ -393,8 +393,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/services">Kitchen</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/services" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/services" class="link"><span>View</span></a>
 									</div>
 								</div>
 
@@ -410,8 +410,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/services">Bathroom & Toilet</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/services" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/services" class="link"><span>View</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -426,8 +426,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/services">Office</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/services" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/services" class="link"><span>View</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -442,8 +442,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/services">Foyer</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/services" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/services" class="link"><span>View</span></a>
 									</div>
 								</div>
 								<div class="image-box">
@@ -458,8 +458,8 @@
 									</div>
 									<div class="image-box-body">
 										<h3 class="title"><a href="/welcome/services">Other Works</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium.</p>
-										<a href="/welcome/services" class="link"><span>Read More</span></a>
+										
+										<a href="/welcome/services" class="link"><span>View</span></a>
 									</div>
 								</div>
 							</div>
