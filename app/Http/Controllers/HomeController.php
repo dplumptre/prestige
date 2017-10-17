@@ -7,6 +7,8 @@ use App\Http\Requests\UserRequest;
 use App\Http\Requests\CategoryRequest;
 use App\Http\Requests\GalleryRequest;
 use Hash;
+use App\About;
+use App\Service;
 use App\User;
 use App\Picture;
 use App\Category;
@@ -235,6 +237,40 @@ class HomeController extends Controller
 
 
 
+//EDIT ABOUT PAGE
+
+     public function edit_about(About $id)
+     {
+         $contents = About::find($id);
+        return view('home/edit-about', compact('contents'));
+    }
+    
+
+
+    public function update_about(Request $request, About $about_content)
+    {
+            if ($about_content->update($request->all())) {
+                Session()->flash('status', 'Your content was successfully updated!');
+            }
+        return back();
+     }
+
+
+//EDIT SERVICES PAGE
+     public function edit_service(Service $id)
+     {
+         $contents = Service::find($id); 
+        return view('home/edit-service', compact('contents'));
+     }
+
+
+     public function update_service(Request $request, Service $service_content)
+     {
+            if ($service_content->update($request->all())) {
+                Session()->flash('status', 'Your content was successfully updated!');
+            }
+        return back();
+     }
 
 
 

@@ -63,47 +63,12 @@ class WelcomeController extends Controller
         return view('welcome/portfolio-preview');
      }
 
-
-
      public function contact()
      {
         return view('welcome/contact');
      }
 
 
-
-     public function edit_about(About $id)
-     {
-         $contents = About::find($id);
-        return view('welcome.edit_about', compact('contents'));
-    }
-    
-
-
-    public function update_about(Request $request, About $about_content)
-    {
-            if ($about_content->update($request->all())) {
-                Session()->flash('status', 'Your content was successfully updated!');
-            }
-        return back();
-     }
-
-
-
-     public function edit_service(Service $id)
-     {
-         $contents = Service::find($id); 
-        return view('welcome.edit_service', compact('contents'));
-     }
-
-
-     public function update_service(Request $request, Service $service_content)
-     {
-            if ($service_content->update($request->all())) {
-                Session()->flash('status', 'Your content was successfully updated!');
-            }
-        return back();
-     }
 
 
 }

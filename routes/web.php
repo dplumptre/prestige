@@ -33,11 +33,7 @@ Route::group(['prefix' => 'welcome'], function () {
     Route::get('contact', 'WelcomeController@contact')->name('contact');
 
 });
-Route::get('welcome/{id}/edit_about', 'WelcomeController@edit_about');
-Route::patch('/{about_content}/edit_about', 'WelcomeController@update_about');
 
-Route::get('welcome/{id}/edit_service', 'WelcomeController@edit_service');
-Route::patch('/{service_content}/edit_service', 'WelcomeController@update_service');
 
 
 
@@ -69,5 +65,13 @@ Route::group(['prefix' => 'home'], function () {
     Route::get('portfolio/{any}', 'HomeController@categoryPortfolio')->name('category.portfolio');
     Route::delete('portfolio/{id}', 'HomeController@deletePortfolio')->name('delete.portfolio');
 
+//Edit About Page 
+    Route::get('/{id}/edit-about', 'HomeController@edit_about');
+    Route::patch('home/{about_content}/edit-about', 'HomeController@update_about');
+
+//Edit Service Page 
+    Route::get('/{id}/edit-service', 'HomeController@edit_service');
+    Route::patch('/{service_content}/edit-service', 'HomeController@update_service');
     
+
 });
