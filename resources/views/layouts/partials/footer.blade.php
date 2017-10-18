@@ -11,39 +11,46 @@
                             <div class="footer"  style="align: center">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-9">
-                                            <div class="footer-content">
-                                                <div class="logo-footer"  style=" padding-left:6%"><img id="logo-footer" src="images/logo_red_footer.png" alt=""></div>
-                                                <div class="row">
-                                                    <div class="col-sm-8" style="padding-right:13%; padding-left:7%">
-                                                        <p>Enjoy our 24/7 top notch customer service for all your enquiries. Fill our contact form, and we'll contact you within 24 hours.
-                                                        Like/follow us on any of our social media</p>
-                                                        <ul class="social-links circle">
-                                                            <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                                                            <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                                                            <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-                                                            <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-                                                            <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                                                        </ul>
+                                        <div class="col-md-10">
+<div class="footer-content">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Enjoy our 24/7 top notch customer service for all your enquiries. 
+                <p style="margin-top: -4%">Fill our contact form, and we'll contact you within 24 hours.
+                <p style="margin-top: -4%">Like/follow us on any of our social media
+            </p>
+                <ul class="social-links circle">
+                    <li class="facebook"><a target="_blank" href="http://www.facebook.com">
+                        <i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
+                    <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+        </div>
+                                                    
+        <div class="col-sm-6">
+            <ul class="list-icons">
+                <li><i class="fa fa-map-marker pr-10"></i> 
+                    3, Ladipo Oluwole Avenue, Ikeja Industrial state, Ikeja-Lagos </li>
+                <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
+                <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
+                <li><i class="fa fa-envelope-o pr-10"></i>
+                    info@prestigeinternationallimited.com.com</li>
+            </ul>
                                                     </div>
-                                                    <div class="col-sm-4>
-                                                        <ul class="list-icons">
-                                                            <li><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
-                                                            <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-                                                            <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
-                                                            <li><i class="fa fa-envelope-o pr-10"></i> info@idea.com</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+        </div>
                                             
-                                            </div>
-                                        </div>
+    </div>
+                                        
+</div>
                                         <div class="space-bottom hidden-lg hidden-xs"></div>
                                         <div class="col-sm-8 col-md-2">
                                             <div class="footer-content">
-                                                <h2>Links</h2>
-                                                <nav>
-                                                    <ul class="nav nav-pills nav-stacked">
+                                                <h2  style="margin-top: -1%">Links</h2>
+                                                <nav style="margin-top: -15%">
+                                                    <ul class="nav nav-pills nav-stacked" >
                                                         <li><a href="/">Home</a></li>
                                                         <li class="active"><a href="/welcome/about">Who we are</a></li>
                                                         <li><a href="/welcome/services">What we do</a></li>

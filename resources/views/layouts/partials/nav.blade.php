@@ -29,6 +29,8 @@
 
 
                                                                         @else 
+                                                                        <li><a href="/home/1/edit-about">About</a></li>
+                                                                        <li><a href="/home/1/edit-service"">Services</a></li>
                                                                         <li><a href="{{ route('users') }}">Users</a></li>
                                                                         <li><a href="{{ route('categories') }}">Categories</a></li>
                                                                         <li><a href="{{ route('portfolio') }}">Portfolio</a></li>

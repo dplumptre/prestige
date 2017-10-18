@@ -8,12 +8,14 @@
             <!-- banner start -->
 			<!-- ================ -->
 			<div class="banner">
-				<div class="fixed-image section dark-translucent-bg parallax-bg-7">
+				<div class="fixed-image section dark-translucent-bg parallax-bg-5">
 					<div class="container">
 					<div class="space-top"></div>
-					<h1>Services Edit</h1>
+					<h1>About Edit </h1>
 					<div class="separator-2"></div>
-					<p class="lead"><?php strip_content("$content->banner_content")?> </p>
+						<div  style="width: 80%"><p class="lead"> 
+							<?php strip_content("$content->banner_content")?> </p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -25,7 +27,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<?php breadcrumb('Edit Service'); ?>
+							<?php breadcrumb('Edit About'); ?>
 						</div>
 					</div>
 				</div>
@@ -50,7 +52,7 @@
                                     @endif
 									<h4>Banner</h4>
                                         
-						            <form method="post" action="/{{$content->id}}/edit_service" >
+						            <form method="post" action="/home/{{$content->id}}/edit-about" >
                                                 {{ csrf_field() }}
                                                 {{ method_field('PATCH') }}
 										<div class="form-group has-feedback">
@@ -103,7 +105,8 @@
         
         <h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 2 </h3>
         <div class="form-group has-feedback">
-			<input type="text" class="form-control" id="section2_right_heading" name="section2_right_heading" value="{{ $content->section2_right_heading}}"><i class="fa fa-pencil form-control-feedback"></i>
+			<textarea class="form-control" rows="4" id="section2_content" name="section2_content">{{ $content->section2_content}}</textarea>
+				<i class="fa fa-pencil form-control-feedback"></i>
 		</div>
 			<input type="submit" value="Update Section 2" class="submit-button btn btn-default">
 
@@ -139,50 +142,8 @@
         <div class="form-group has-feedback">
 				<textarea class="form-control" rows="7" id="section3_tab3_content" name="section3_tab3_content">{{ $content->section3_tab3_content}}</textarea>	<i class="fa fa-pencil form-control-feedback"></i>
 		</div>
+
 			<input type="submit" value="Update Section 3" class="submit-button btn btn-default">
-
-
-
-        <h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 4 </h3>
-			
-		<div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_heading" name="section4_heading" value="{{ $content->section4_heading}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-				<textarea class="form-control" rows="12" id="section4_content" name="section4_content">{{ $content->section4_content}}</textarea>	<i class="fa fa-pencil form-control-feedback"></i>
-		</div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point1" name="section4_point1" value="{{ $content->section4_point1}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point2" name="section4_point2" value="{{ $content->section4_point2}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point3" name="section4_point3" value="{{ $content->section4_point3}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point4" name="section4_point4" value="{{ $content->section4_point4}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point5" name="section4_point5" value="{{ $content->section4_point5}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point6" name="section4_point6" value="{{ $content->section4_point6}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-        <div class="form-group has-feedback">
-		        <input type="text" class="form-control" id="section4_point7" name="section4_point7" value="{{ $content->section4_point7}}"><i class="fa fa-pencil form-control-feedback"></i>
-        </div>
-		<input type="submit" value="Update Section 4" class="submit-button btn btn-default">
-
-
-
-
-
-
-
-
-
-
 								</div>
 							</div>
 
