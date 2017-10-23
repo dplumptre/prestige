@@ -28,7 +28,7 @@ Route::group(['prefix' => 'welcome'], function () {
     Route::get('about', 'WelcomeController@about')->name('about');
     Route::get('services', 'WelcomeController@services')->name('services');
     Route::get('portfolio', 'WelcomeController@portfolio')->name('welcome.portfolio');
-    Route::get('portfolio-view', 'WelcomeController@portfolio_view')->name('welcome.portfolio-view');
+    Route::get('portfolio-view/{slug}', 'WelcomeController@portfolio_view')->name('welcome.portfolio-view');
     Route::get('portfolio-preview', 'WelcomeController@portfolio_preview')->name('welcome.portfolio-preview');
     Route::get('contact', 'WelcomeController@contact')->name('contact');
 

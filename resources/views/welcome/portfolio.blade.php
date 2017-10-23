@@ -54,142 +54,51 @@
 							<!-- isotope filters start -->
 							<div class="filters">
 								<ul class="nav nav-pills">
-									<li class="active"><a href="#" data-filter="*">All</a></li>
-									<li><a href="#" data-filter=".Living-room">Living Room</a></li>
-									<li><a href="#" data-filter=".Bedroom">Bedroom</a></li>
-									<li><a href="#" data-filter=".Dinning">Dinning</a></li>
-									<li><a href="#" data-filter=".Kitchen">Kitchen</a></li>
-									<li><a href="#" data-filter=".Bathroom">Bathroom & Toilet</a></li>
-									<li><a href="#" data-filter=".Office">Office</a></li>
-									<li><a href="#" data-filter=".Foyer">Foyer</a></li>
-									<li><a href="#" data-filter=".Other">Other</a></li>
+
+							<li class="active"><a href="#" data-filter="*">All</a></li>
+							@if($cats)
+							@foreach($cats as $d)
+							<li><a href="{{ asset("/welcome/portfolio-view/$d->slug")}}"  data-filter=".$d->slug" >  {{$d->category}}</a></li>
+							@endforeach
+							@endif
 								</ul>
 							</div>
 							<!-- isotope filters end -->
 
 							<!-- portfolio items start -->
-							<div class="image-boxes isotope-container row">
+							<div class="isotope-container row grid-space-20"  style="margin-top:30px">
 
-								<div class="col-md-3 col-sm-6 isotope-item Living-room">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/living-room_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/living-room_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Living Room</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">Living Room</a></h3>
-									</div>
-								</div>
+
+				
+			   @if( $data && count($data) > 0 )
+
+				@foreach($data as $key => $pic)
+
+				<?php $count = count($pic->pictures) ?>
+
+
+
+				@for( $i = 0 ; $i < $count ; $i++)
+				<div class="col-sm-6 col-md-3 isotope-item web-design">
+				<div class="image-box">
+					<div class="overlay-container" style="height:250px">
+						<img src="{{asset('images/pics/'.$pic->pictures[$i]->picture)}}" alt="" >
+						<div class="overlay">
+						  <div class="overlay-links"  style="align: center">
+						   <a  href="{{asset('images/pics/'.$pic->pictures[$i]->picture)}}" class="popup-img"><i class="fa fa-search-plus"></i></a>
+				          </div>
+					    <span style="align: center"></span>
+				        </div>
+			    	</div>
+					<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">{{ $pic->category}}</a></h3>
+						</div>
+				</div>													
+				@endfor
+				@endforeach
+
+				@endif
 							
-								<div class="col-md-3 col-sm-6 isotope-item Bedroom">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/bedroom_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/bedroom_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Bedroom</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">Bedroom</a></h3>
-									</div>
-								</div>
 
-
-								<div class="col-md-3 col-sm-6 isotope-item Dinning">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/dining.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/dining.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Dinning</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">Dinning</a></h3>
-									</div>
-								</div>
-
-								<div class="col-md-3 col-sm-6 isotope-item Dinning">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/kitchen.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/kitchen.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Kitchen</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">Kitchen </a></h3>
-									</div>
-								</div>
-								
-								<div class="col-md-3 col-sm-6 isotope-item Bathroom">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/bathroom_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/bathroom_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Living Room</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="{{ asset('images/bathroom_sm.jpg') }}"  class="btn btn-light-gray btn-block"   style="align: center">Living Room</a></h3>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 isotope-item Office">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/office_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/office_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Living Room</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="{{ asset('images/office_sm.jpg') }}"  class="btn btn-light-gray btn-block"   style="align: center">Living Room</a></h3>
-									</div>
-								</div>
-								
-								<div class="col-md-3 col-sm-6 isotope-item Bedroom">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/foyer_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/foyer_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Living Room</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="{{ asset('images/foyer_sm.jpg') }}"  class="btn btn-light-gray btn-block"   style="align: center">Living Room</a></h3>
-									</div>
-								</div>
-								
-								<div class="col-md-3 col-sm-6 isotope-item Living-room">
-									<div class="image-box">
-										<div class="overlay-container">
-											<img src="{{ asset('images/living-room_sm.jpg') }}" alt="" >
-											<div class="overlay">
-												<div class="overlay-links"  style="align: center">
-													<a href="{{ asset('images/living-room_sm.jpg') }}" class="popup-img"><i class="fa fa-search-plus"></i></a>
-												</div>
-												<span style="align: center">Living Room</span>
-											</div>
-										</div>
-											<h3 class="title"><a href="portfolio-item.html"  class="btn btn-light-gray btn-block"   style="align: center">Living Room</a></h3>
-									</div>
-								</div>
-							</div>
 							<!-- portfolio items end -->
 
 						</div>

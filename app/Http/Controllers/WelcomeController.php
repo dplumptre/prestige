@@ -8,6 +8,7 @@ use App\About;
 use App\Service;
 use App\Portfolio_list;
 use App\Testimonial;
+use App\Category;
 
 class WelcomeController extends Controller
 {
@@ -50,12 +51,16 @@ class WelcomeController extends Controller
 
      public function portfolio()
      {
-        return view('welcome/portfolio');
+        $cats = Category::all();
+        $data =  Category::with('pictures')->paginate();
+        return view('welcome/portfolio',compact('cats','data'));
      }
      
-     public function portfolio_view()
+     public function portfolio_view($slug)
      {
-        return view('welcome/portfolio-view');
+        $cats = Category::all();
+        $data =  Category::with('pictures')->where('slug','=',$slug)->paginate();
+        return view('welcome/portfolio-view', compact('data','cats','slug'));
      }
      
      public function portfolio_preview()
