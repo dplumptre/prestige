@@ -79,6 +79,8 @@
 							<div class="footer-content">
                                 <div class="side vertical-divider-left">
 									<h2>See us on map</h2>
+									<p>405, Sea Street </p>
+									<p>Quincy M.A</p>
 									<div class="alert alert-success hidden" id="MessageSent2">
 										We have received your message, we will contact you very soon.
 									</div>

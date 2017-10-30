@@ -35,7 +35,7 @@
 
 			<!-- main-container start -->
 			<!-- ================ -->
-			<section class="main-container">
+			<section class="main">
 
 				<div class="container">
 					<div class="row">
@@ -46,9 +46,9 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Our Work</h1>
-							<div class="separator-2"></div>
-							<p class="lead">We are experts that have come together to give out genius solutions to our clients. You'll love our work. Browse our portfolio!</p>
+							<h1 class="page-title" style="color:white">Our Work</h1>
+							<div class="separator-2" ></div>
+							<p class="lead" style="color:white">We are experts that have come together to give out genius solutions to our clients. You'll love our work. Browse our portfolio!</p>
 							<!-- page-title end -->
 							
 							<!-- isotope filters start -->

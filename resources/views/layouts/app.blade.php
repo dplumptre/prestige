@@ -63,7 +63,7 @@
 			"boxed": boxed layout mode e.g. <body class="boxed">
 			"pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> 
 	-->
-	<body class="front no-trans">
+	<body class=" front no-trans">
 		<!-- scrollToTop -->
 		<!-- ================ -->
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
@@ -110,7 +110,7 @@
 								<div class="header-top-dropdown">
 
 									<div class="btn-group dropdown">
-										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-phone"></i> +4479798998933</button>
+										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-phone"></i> +15089180923</button>
 									
 									</div>
 		

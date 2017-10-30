@@ -10,9 +10,9 @@
 				<div class="fixed-image section dark-translucent-bg parallax-bg-11">
 					<div class="container">
 					<div class="space-top"></div>
-					<h1>Portfolio</h1>
+					<h1 class="title">Portfolio</h1>
 					<div class="separator-2"></div>
-					<p class="lead">Whether your project involves a living room, family room, dining room, bedroom or office <br class="hidden-xs hidden-sm">  we have the products and ideas to suit your every need. Browse our portfolio!</p>
+					<p class="lead title">Whether your project involves a living room, family room, dining room, bedroom or office <br class="hidden-xs hidden-sm">  we have the products and ideas to suit your every need. Browse our portfolio!</p>
 					</div>
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 
 			<!-- main-container start -->
 			<!-- ================ -->
-			<section class="main-container">
+			<section class="main">
 
 				<div class="container">
 					<div class="row">

@@ -35,7 +35,7 @@
 
 <!-- main-container start -->
 			<!-- ================ -->
-			<section class="main-container">
+			<section class="page-top">
 				<div class="container">
 					<div class="row">
 

@@ -25,3 +25,62 @@ File Description: Place here your custom CSS styles
 .margin-up-down{
     margin: 60px 0px 60px 0px;
 }
+
+
+
+/* 
+
+PAGE COLOR CHANGE
+
+ */
+.page-wrapper ,.header, body {
+    background-color: #482A3C !important;
+    color:#fff !important;
+}
+
+
+
+body h1 , body h2 , .call-to-action h1 p{
+    color:#fff !important;
+}
+
+.navbar-default .navbar-nav > li > a , .nav-pills > li > a , .title{
+    color: #fff !important;
+}
+
+
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li > a:hover, .nav-pills > li > a:focus {
+
+    background-color: #a35dbd !important;
+}
+
+.tp-bannertimer {
+    background-color:  #a35dbd !important;
+}
+
+
+.footer  li a{
+    color:#999 !important;
+}
+
+
+ .main-container h1,  .main-container h2  , .main-container p, .tab-content, .tab-content h1 , .panel-body, .owl-carousel, .owl-carousel h1, .owl-carousel h2 {
+    
+       color:#666 !important;
+   
+   }
+
+   .nav-tabs > li > a, footer cite title{
+    color:   #E84C3D !important;
+  
+   }
+
+   blockquote footer, blockquote small, blockquote .small {
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #fff !important;
+}
+
+
+

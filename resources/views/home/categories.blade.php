@@ -27,7 +27,7 @@
                                 <tbody>
                                      @if ( $data->count() )
                                     @foreach($data as $key =>$row )
-                                    <tr>
+                                    <tr style="color:#666">
                                         <td class="text-center">{{ $key + 1 }}</td>
                                         <td class="text-center">{{$row->category}}</td>
                                         <td class="text-center">

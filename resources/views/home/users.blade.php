@@ -28,7 +28,7 @@
                                 <tbody>
                                      @if ( $data->count() > 0 )
                                     @foreach($data as $key =>$row )
-                                    <tr>
+                                    <tr style="color:#666">
                                         <td class="text-center">{{ $key + 1 }}</td>
                                         <td class="text-center">{{$row->name}}</td>
                                         <td class="text-center">{{$row->email}}</td>

@@ -48,11 +48,10 @@
                                         <div class="space-bottom hidden-lg hidden-xs"></div>
                                         <div class="col-sm-8 col-md-2">
                                             <div class="footer-content">
-                                                <h2  style="margin-top: -1%">Links</h2>
                                                 <nav style="margin-top: -15%">
-                                                    <ul class="nav nav-pills nav-stacked" >
+                                                    <ul class=" nav nav-pills nav-stacked footer" >
                                                         <li><a href="/">Home</a></li>
-                                                        <li class="active"><a href="/welcome/about">Who we are</a></li>
+                                                        <li><a href="/welcome/about">Who we are</a></li>
                                                         <li><a href="/welcome/services">What we do</a></li>
                                                         <li><a href="/welcome/portfolio">Portofolio</a></li>
                                                         <li><a href="/welcome/contact">Where we are</a></li>
