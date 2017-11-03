@@ -71,8 +71,17 @@ body h1 , body h2 , .call-to-action h1 p{
    
    }
 
-   .nav-tabs > li > a, footer cite title{
+   .nav-tabs > li.active > a, footer cite title{
     color:   #E84C3D !important;
+  
+   }
+
+   .nav-tabs > li > a{
+    color:   #fff !important;
+  
+   }
+   .nav-tabs > li > a:hover{
+    color:   #666 !important;
   
    }
 
@@ -85,6 +94,8 @@ body h1 , body h2 , .call-to-action h1 p{
 p a{
     color:white;
 }
+
+
 
 
 

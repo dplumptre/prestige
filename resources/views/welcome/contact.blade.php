@@ -78,9 +78,11 @@
                         <div class="col-sm-6">
 							<div class="footer-content">
                                 <div class="side vertical-divider-left">
-									<h2>See us on map</h2>
+									<h2>Prestige International</h2>
 									<p>405, Sea Street </p>
 									<p>Quincy M.A</p>
+									<p>Tel: +15089180923</p>
+									<p>Email: info@prestigeinternationallimited.com</p>
 									<div class="alert alert-success hidden" id="MessageSent2">
 										We have received your message, we will contact you very soon.
 									</div>

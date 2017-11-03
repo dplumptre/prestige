@@ -20,24 +20,23 @@
                 <p style="margin-top: -4%">Fill our contact form, and we'll contact you within 24 hours.
                 <p style="margin-top: -4%">Like/follow us on any of our social media
             </p>
-                <ul class="social-links circle">
+ <!--                <ul class="social-links circle">
                     <li class="facebook"><a target="_blank" href="http://www.facebook.com">
                         <i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
                     <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
                     <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
                     <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
+                </ul> -->
         </div>
                                                     
         <div class="col-sm-6">
             <ul class="list-icons">
                 <li><i class="fa fa-map-marker pr-10"></i> 
-                    3, Ladipo Oluwole Avenue, Ikeja Industrial state, Ikeja-Lagos </li>
-                <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-                <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
+                405, Sea Street , Quincy M.A </li>
+                <li><i class="fa fa-phone pr-10"></i> +15089180923</li>
                 <li><i class="fa fa-envelope-o pr-10"></i>
-                    info@prestigeinternationallimited.com.com</li>
+                    info@prestigeinternationallimited.com</li>
             </ul>
                                                     </div>
         </div>
