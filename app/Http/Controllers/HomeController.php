@@ -29,6 +29,11 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
+
+
+    private $itemInPage = 16;
+
+    
     /**
      * Show the application dashboard.
      *
@@ -159,6 +164,10 @@ class HomeController extends Controller
         $image = $request->file('picture');
         $cat = $request->get('category');
 
+        #########
+        $slug = Category::find($cat);
+
+
             /* change name */
             $filename = arrageImageName($image->getClientOriginalName()); 
             
@@ -182,7 +191,7 @@ class HomeController extends Controller
             $normalimage = Image::make($image->getRealPath())->save( $normal_path);   
             
 
-        return redirect()->route('portfolio');
+        return redirect('home/portfolio/'.$slug->slug);
     }
 
 
@@ -191,7 +200,9 @@ class HomeController extends Controller
     {
         
         $cats = Category::all();
-        $pics = Picture::all();
+       // $pics = Picture::all();
+
+        $pics =  Picture::with('category')->orderBy('id', 'desc')->paginate($this->itemInPage);
         return view('home/portfolio')->with('cats', $cats)
                                      ->with('pics',$pics);
     }
@@ -218,16 +229,17 @@ class HomeController extends Controller
     public function categoryPortfolio($cat)
     {
         $cats = Category::all();
-        $data =  Category::with('pictures')->where('slug','=',$cat)->paginate();
-  //return $data[0]['pictures'];
-    //return $data[0]['pictures'];
+        $c = Category::where('slug','=',$cat)->first();
+        $data =   $c->pictures()->orderBy('id', 'desc')->paginate($this->itemInPage);
 
 
-    //return $data;
 
+
+        
         return view('home/categoryportfolio')
         ->with('cats', $cats)
-        ->with('data',$data);
+        ->with('data',$data)
+        ->with('slug',$cat);
     }
     
 

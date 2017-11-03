@@ -48,7 +48,7 @@
                                             {{ Session::get('status') }}
                                         </div>
                                     @endif
-									<h4>Banner</h4>
+									<h2>Banner</h2>
                                         
 						            <form method="post" action="/home/{{$content->id}}/edit-service" >
                                                 {{ csrf_field() }}
@@ -68,7 +68,7 @@
 <div class="col-sm-12">
 	<div class="footer-content">
       
-		<h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 1 </h3>
+		<h2 class="text-center" style="margin: 10% 0% 2% 0%">Section 1 </h2>
 			
 		<div class="form-group has-feedback">
 		        <input type="text" class="form-control" id="section1_heading" name="section1_heading" value="{{ $content->section1_heading}}"><i class="fa fa-pencil form-control-feedback"></i>
@@ -101,7 +101,7 @@
 
 
         
-        <h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 2 </h3>
+        <h2 class="text-center" style="margin: 10% 0% 2% 0%">Section 2 </h2>
         <div class="form-group has-feedback">
 			<input type="text" class="form-control" id="section2_right_heading" name="section2_right_heading" value="{{ $content->section2_right_heading}}"><i class="fa fa-pencil form-control-feedback"></i>
 		</div>
@@ -111,7 +111,7 @@
 
 
 
-       <h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 3 </h3>
+       <h2 class="text-center" style="margin: 10% 0% 2% 0%">Section 3 </h2>
         <div class="form-group has-feedback">
 		        <input type="text" class="form-control" id="section3_heading" name="section3_heading" value="{{ $content->section3_heading}}"><i class="fa fa-pencil form-control-feedback"></i>
         </div>
@@ -143,7 +143,7 @@
 
 
 
-        <h3 class="text-center" style="margin: 10% 0% 2% 0%">Section 4 </h3>
+        <h2 class="text-center" style="margin: 10% 0% 2% 0%">Section 4 </h2>
 			
 		<div class="form-group has-feedback">
 		        <input type="text" class="form-control" id="section4_heading" name="section4_heading" value="{{ $content->section4_heading}}"><i class="fa fa-pencil form-control-feedback"></i>

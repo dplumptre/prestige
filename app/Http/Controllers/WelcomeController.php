@@ -9,6 +9,7 @@ use App\Service;
 use App\Portfolio_list;
 use App\Testimonial;
 use App\Category;
+use App\Picture;
 
 class WelcomeController extends Controller
 {
@@ -23,6 +24,8 @@ class WelcomeController extends Controller
          $this->middleware('guest');
      }
  
+
+     private $itemInPage = 16;
      /**
       * Show the application dashboard.
       *
@@ -52,15 +55,27 @@ class WelcomeController extends Controller
      public function portfolio()
      {
         $cats = Category::all();
-        $data =  Category::with('pictures')->paginate();
+//        $data =  Category::with('pictures')->paginate(5);
+
+
+$data =  Picture::with('category')->orderBy('id', 'desc')->paginate($this->itemInPage);
+
+
         return view('welcome/portfolio',compact('cats','data'));
      }
      
      public function portfolio_view($slug)
      {
+/*         $cats = Category::all();
+        $data =  Category::with('pictures')->where('slug','=',$slug)->simplePaginate(3);
+        return view('welcome/portfolio-view', compact('data','cats','slug')); */
+
         $cats = Category::all();
-        $data =  Category::with('pictures')->where('slug','=',$slug)->paginate();
+        $c = Category::where('slug','=',$slug)->first();
+        $data =  $c->pictures()->orderBy('id', 'desc')->paginate($this->itemInPage);
         return view('welcome/portfolio-view', compact('data','cats','slug'));
+
+
      }
      
      public function portfolio_preview()

@@ -74,36 +74,35 @@
 
 				@foreach($data as $key => $pic)
 
-				<?php $count = count($pic->pictures) ?>
-
-
-
-				@for( $i = 0 ; $i < $count ; $i++)
 				<div class="col-sm-6 col-md-3 isotope-item web-design">
 				<div class="image-box">
-					<div class="overlay-container" style="height:250px">
-						<img src="{{asset('images/pics/'.$pic->pictures[$i]->picture)}}" alt="" >
+					<div class="overlay-container" style="height:200px">
+						<img src="{{asset('images/pics/'.$pic->picture)}}" alt="" >
 						<div class="overlay">
 						  <div class="overlay-links"  style="align: center">
-						   <a  href="{{asset('images/pics/'.$pic->pictures[$i]->picture)}}" class="popup-img"><i class="fa fa-search-plus"></i></a>
+						   <a  href="{{asset('images/pics/'.$pic->picture)}}" class="popup-img"><i class="fa fa-search-plus"></i></a>
 				          </div>
 					    <span style="align: center"></span>
 				        </div>
 			    	</div>
-					<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">{{ $pic->category}}</a></h3>
+					<h3 class="title"><a href="#"  class="btn btn-light-gray btn-block"   style="align: center">{{ $pic->category->category}}</a></h3>
 						</div>
-				</div>													
-				@endfor
+				</div>	
+	
 				@endforeach
 
 				@endif
 							
+
+				
 
 							<!-- portfolio items end -->
 
 						</div>
 						<!-- main end -->
 
+					
+						{{ $data->links() }}
 					</div>
 				</div>
 			</section>

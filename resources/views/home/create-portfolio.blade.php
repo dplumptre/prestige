@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row">
               
- <div class="page-header">
-  <h4>Create Portfolio</h4>
+ <div class="main">
+  <h2>Create Portfolio</h2>
 </div>
         
         

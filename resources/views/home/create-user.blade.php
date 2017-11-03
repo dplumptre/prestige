@@ -5,7 +5,7 @@
     <div class="row">
               
  <div class="page-header">
-  <h4>Create User</h4>
+  <h2>Create User</h2>
 </div>
         
         

@@ -5,7 +5,7 @@
     <div class="row">
         
             <div class="page-header">
-            <h4>Users</h4>
+            <h2>Users</h2>
             </div>
 
             @include('layouts.partials.errors')

@@ -4,16 +4,17 @@
 <div class="container">
     <div class="row">
         
-       <div class="page-header">
-          <h4>Portfolio</h4>
-          <h5  class="text-right"> 
+       <div class="main">
+       <br /><br />
+          <h2 class='title'>All Categories</h2>
+          <p  class="text-right"> 
 
 
           @foreach($cats as $data)
           / <a href="{{ asset("/home/portfolio/$data->slug")}}" > {{$data->category}}</a>
 
           @endforeach
-          / <a href="{{ asset("home/create-portfolio")}}" ><i class="fa fa-plus"></i> create Portfolio</a></h5>
+          / <a href="{{ asset("home/create-portfolio")}}" ><i class="fa fa-plus"></i> create Portfolio</a></p><hr />
        </div>
 
         
@@ -49,18 +50,13 @@
                         </form>  
      </div>
     @endforeach
-
      @endif    
-
-
-
-
       </div>
 
 
 
 
-
+      {{ $pics->links() }}
 
 
 

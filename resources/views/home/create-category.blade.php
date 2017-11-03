@@ -5,7 +5,7 @@
     <div class="row">
               
  <div class="page-header">
-  <h4>Create Categories</h4>
+  <h2>Create Categories</h2>
 </div>
         
         

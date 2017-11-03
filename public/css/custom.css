@@ -82,5 +82,9 @@ body h1 , body h2 , .call-to-action h1 p{
     color: #fff !important;
 }
 
+p a{
+    color:white;
+}
+
 
 

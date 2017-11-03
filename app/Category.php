@@ -16,7 +16,7 @@ class Category extends Model
 
     public function pictures()
     {
-        return $this->hasMany('App\Picture','category_id');
+        return $this->hasMany('App\Picture','category_id','id');
     }
 
 
@@ -25,3 +25,4 @@ class Category extends Model
 }
 
 
+ 
