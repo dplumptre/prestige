@@ -81,7 +81,7 @@
 
 							<!-- header-top-first start -->
 							<!-- ================ -->
-							<div class="header-top-first clearfix">
+<!-- 							<div class="header-top-first clearfix">
 								<ul class="social-links clearfix hidden-xs">
 									<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 									<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
@@ -95,7 +95,7 @@
 										</ul>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- header-top-first end -->
 
 						</div>
