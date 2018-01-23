@@ -34,10 +34,16 @@ PAGE COLOR CHANGE
 
  */
 .page-wrapper ,.header, body {
-    background-color: #482A3C !important;
+    background-color: #C51E2E !important;
     color:#fff !important;
 }
 
+
+.btn-white {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #FFF !important;
+}
 
 
 body h1 , body h2 , .call-to-action h1 p{
@@ -52,11 +58,11 @@ body h1 , body h2 , .call-to-action h1 p{
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li > a:hover, .nav-pills > li > a:focus {
 
-    background-color: #a35dbd !important;
+    background-color: #6B0000 !important;
 }
 
 .tp-bannertimer {
-    background-color:  #a35dbd !important;
+    background-color:  #6B0000 !important;
 }
 
 
@@ -95,6 +101,12 @@ p a{
     color:white;
 }
 
+.btn-default {
+    background-color: #6B0000 !important;
+    color: #ffffff !important;
+    border-color: #cd3c2e;
+}
+
 
 
 
@@ -103,6 +115,6 @@ p a{
 
     .navbar-nav > li > a,  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
         color: #fff;
-        background-color: #482A3C;
+        background-color: #C51E2E;
     }
 }

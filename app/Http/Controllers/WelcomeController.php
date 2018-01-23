@@ -10,6 +10,10 @@ use App\Portfolio_list;
 use App\Testimonial;
 use App\Category;
 use App\Picture;
+use Illuminate\Support\Facades\Mail;
+
+
+
 
 class WelcomeController extends Controller
 {
@@ -89,7 +93,41 @@ $data =  Picture::with('category')->orderBy('id', 'desc')->paginate($this->itemI
      }
 
 
+     public function post_contact(Request $request)
+     {
+        $this->validate($request, [
+                'name2' => 'required|string|max:20',	
+                'email2' => 'required|email',	
+                'message2' => 'required',	
+        ],
 
+        [ 
+             'name2.required' => 'Name Field is required!',
+             'email2.required' => 'Email Field is required!',
+             'message2.required' => 'Message Field is required!'
+        ]);
+
+
+ 
+
+
+      $name =  $request->get('name2');
+      $email = $request->get('email2');
+      $msg =  $request->get('message2');
+
+
+Mail::send('layouts.partials.contactmail', array('name' =>$name,'email'=>$email,'msg'=>$msg), function($message)
+{
+    $message->to('info@prestigeinternationallimited.com', 'Prestige International')->subject('Prestige International Contact Form');
+});
+
+
+$request->session()->flash('message.content', 'We have received your message, we will contact you very soon!');
+$request->session()->flash('message.level', 'success');
+
+
+        return back();
+     }
 
 }
 

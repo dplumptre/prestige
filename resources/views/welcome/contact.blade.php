@@ -47,25 +47,25 @@
 									<div>
 										<p>We're glad you have chosen to contact us. Please keep in mind that all informations are confidential according to our privacy policy
 									</p>
+									
 									</div>
-									<div class="alert alert-success hidden" id="MessageSent2">
-										We have received your message, we will contact you very soon.
-									</div>
-									<div class="alert alert-danger hidden" id="MessageNotSent2">
-										Oops! Something went wrong please refresh the page and try again.
-									</div>
-									<form role="form" id="footer-form">
-										<div class="form-group has-feedback">
+									@include('layouts.partials.errors')
+
+
+									
+                                     <form class="form-horizontal " action="{{ route('post.contact') }}" method="POST">
+                                    {{csrf_field()}}
+										<div style='margin-bottom: 15px;' class=" has-feedback">
 											<label class="sr-only" for="name2">Name</label>
 											<input type="text" class="form-control" id="name2" placeholder="Name" name="name2">
 											<i class="fa fa-user form-control-feedback"></i>
 										</div>
-										<div class="form-group has-feedback">
+										<div style='margin-bottom: 15px;' class=" has-feedback">
 											<label class="sr-only" for="email2">Email address</label>
 											<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2">
 											<i class="fa fa-envelope form-control-feedback"></i>
 										</div>
-										<div class="form-group has-feedback">
+										<div style='margin-bottom: 15px;' class=" has-feedback">
 											<label class="sr-only" for="message2">Message</label>
 											<textarea class="form-control" rows="4" id="message2" placeholder="Message" name="message2"></textarea>
 											<i class="fa fa-pencil form-control-feedback"></i>
@@ -80,7 +80,8 @@
                                 <div class="side vertical-divider-left">
 									<h2>Prestige International</h2>
 									<p>405, Sea Street </p>
-									<p>Quincy M.A</p>
+									<p>Quincy Massachusetts,</p>
+									<p>USA.</P>
 									<p>Tel: +15089180923</p>
 									<p>Email: info@prestigeinternationallimited.com</p>
 									<div class="alert alert-success hidden" id="MessageSent2">

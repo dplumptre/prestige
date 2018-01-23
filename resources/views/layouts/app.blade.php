@@ -45,11 +45,13 @@
 		<!-- iDea core CSS file -->
 		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+				<!-- Custom css -->
+				<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
 		<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
 		<link href="{{ asset('css/skins/red.css') }}" rel="stylesheet">
 
-		<!-- Custom css -->
-		<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
 
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

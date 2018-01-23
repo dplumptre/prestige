@@ -40,7 +40,7 @@
                                     <div class="col-xs-6">
                                         <label for="imageInput">File input</label>
                                         <input  class="form-control" name="picture" type="file" id="file">
-                                        <p class="help-block">use eithe png or jpg</p>
+                                        <p class="help-block">use either png or jpg</p>
                                     </div>
                                     </div>
 

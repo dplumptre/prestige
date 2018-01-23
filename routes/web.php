@@ -30,11 +30,9 @@ Route::group(['prefix' => 'welcome'], function () {
     Route::get('portfolio', 'WelcomeController@portfolio')->name('welcome.portfolio');
     Route::get('portfolio-view/{slug}', 'WelcomeController@portfolio_view')->name('welcome.portfolio-view');
     Route::get('portfolio-preview', 'WelcomeController@portfolio_preview')->name('welcome.portfolio-preview');
-    Route::get('contact', 'WelcomeController@contact')->name('contact');
-
+    Route::get('contact',  'WelcomeController@contact')->name('contact');
+    Route::post('contact', 'WelcomeController@post_contact')->name('post.contact');
 });
-
-
 
 
 
