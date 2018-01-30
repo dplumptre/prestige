@@ -158,6 +158,61 @@ Mail::send('layouts.partials.contactmail', array('name' =>$name,'email'=>$email,
 
 
 
+    public function postUpload(Request $request)
+    {
+         
+        $comment =  $request->comment;
+        $filename = $request->filename;
+        $name = $request->name;
+        $email = $request->email;
+        $attach = $request->file('file');
+
+        $target_path = public_path('images/emailimages/'.$filename);
+         
+        if (move_uploaded_file($_FILES['file']['tmp_name'], $target_path)) {
+
+
+
+    Mail::send('layouts.partials.emailimages', array('name' =>$name,'email'=>$email,'msg'=>$comment,'filename'=>'filename'), function($message) use( $attach)
+    {
+       // $message->to('info@prestigeinternationallimited.com', 'Prestige International')->subject('Prestige International Snap Sample');
+        $message->to('dplumptre1@gmail.com', 'Prestige International')->subject('Prestige International Snap Sample ');
+        $message->attach($attach);
+    });
+
+
+
+
+
+       return response()->json([
+        
+                    'result'=>'File sent successfully'
+        
+        
+                    ],201);
+        } else {
+               
+            return response()->json([
+                
+                            'result'=>'errorr!'
+                
+                
+                            ],401);
+        }
+
+
+
+
+
+            
+    }        
+        
+
+
+
+
+
+
 
         public function register(Request $request)
         {

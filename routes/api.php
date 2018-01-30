@@ -35,7 +35,7 @@ Route::get('portfolio/{catid}', 'ApiController@portfolio');
 Route::get('category', 'ApiController@category');
 Route::post('contact', 'ApiController@post_contact');
 
-
+Route::post('upload', 'APIController@postUpload');
 
 Route::post('register', 'ApiController@register');
 Route::post('login', 'ApiController@login');
