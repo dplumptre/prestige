@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.7.30, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.21, for macos10.15 (x86_64)
 --
--- Host: 127.0.0.1    Database: decor
+-- Host: localhost    Database: prestige
 -- ------------------------------------------------------
--- Server version	5.7.30-0ubuntu0.18.04.1
+-- Server version	8.0.15
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `abouts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `abouts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -65,7 +65,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -92,7 +92,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `departments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `departments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
@@ -118,7 +118,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `employeetypes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `employeetypes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `employee_type` varchar(50) DEFAULT NULL,
@@ -144,7 +144,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `grades`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `grades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `level` varchar(50) DEFAULT NULL,
@@ -170,7 +170,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `leaves`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `leaves` (
   `id` int(200) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(200) NOT NULL,
@@ -230,7 +230,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -255,7 +255,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -281,7 +281,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `password_resets`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `password_resets` (
   `email` varchar(50) NOT NULL,
   `token` varchar(150) DEFAULT NULL,
@@ -306,7 +306,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pictures`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pictures` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -315,7 +315,7 @@ CREATE TABLE `pictures` (
   `category_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_pictures_categories_idx` (`category_id`),
-  CONSTRAINT `fk_pictures_categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_pictures_categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -325,7 +325,7 @@ CREATE TABLE `pictures` (
 
 LOCK TABLES `pictures` WRITE;
 /*!40000 ALTER TABLE `pictures` DISABLE KEYS */;
-INSERT INTO `pictures` VALUES (16,'2017-10-10 14:25:23','2017-10-10 14:25:23','dp_5evcy6v6pp.jpg',1),(18,'2017-10-10 14:28:02','2017-10-10 14:28:02','dp_tdaryrgbdeepee.jpg',3),(19,'2017-10-10 20:34:56','2017-10-10 20:34:56','dp_i6tk6wj5logo.png',1),(20,'2017-11-02 07:11:18','2017-11-02 07:11:18','dp_brfxcvef60.jpg',1),(22,'2017-11-02 07:56:15','2017-11-02 07:56:15','dp_pnn3ba2jre9167727.jpg',1),(23,'2017-11-02 08:00:37','2017-11-02 08:00:37','dp_pkit4jdqJHIDJointEditorial4125b.jpg',1),(24,'2017-11-02 09:23:01','2017-11-02 09:23:01','dp_3g4xryxopexelsphoto276508.jpeg',4),(29,'2017-11-02 10:27:55','2017-11-02 10:27:55','dp_odjb7aggpexelsphoto263189.jpeg',5),(30,'2017-11-02 13:52:35','2017-11-02 13:52:35','dp_6teqs038traditionalentry.jpg',7),(31,'2017-11-02 13:52:44','2017-11-02 13:52:44','dp_07aosa2vshutterstock48791164.jpg',7),(32,'2017-11-02 13:52:55','2017-11-02 13:52:55','dp_mmoby7kkcome.jpg',7),(33,'2017-11-02 13:53:07','2017-11-02 13:53:07','dp_ouc7gczvlandscapefoyer1.jpg',7),(34,'2017-12-10 07:18:43','2017-12-10 07:18:43','dp_42bjus3cpage.png',7),(35,'2017-12-10 07:18:55','2017-12-10 07:18:55','dp_r4478dpv5112010.png',7),(36,'2017-12-10 07:19:06','2017-12-10 07:19:06','dp_njpn0vn6demmy.jpg',7),(37,'2017-12-10 07:19:28','2017-12-10 07:19:28','dp_ghkotsefemail.png',7),(38,'2017-12-10 07:19:44','2017-12-10 07:19:44','dp_4k6hr5iedqee.jpg',6),(39,'2017-12-10 07:19:56','2017-12-10 07:19:56','dp_2v28i4tpbaba.jpg',6),(40,'2017-12-10 07:20:05','2017-12-10 07:20:05','dp_szt5jsgxjohn.jpg',7),(41,'2017-12-10 07:20:18','2017-12-10 07:20:18','dp_nnmytzvodasboard.png',7),(42,'2017-12-10 07:23:47','2017-12-10 07:23:47','dp_i2hhsbtglogo.png',7),(43,'2017-12-10 07:23:58','2017-12-10 07:23:58','dp_sqfxs8r2345367061n.jpg',7),(44,'2017-12-10 07:24:18','2017-12-10 07:24:18','dp_woxnofqtoverall.jpg',7),(45,'2017-12-10 07:24:31','2017-12-10 07:24:31','dp_why0y2kusinglelogo.jpg',7),(46,'2017-12-10 07:24:48','2017-12-10 07:24:48','dp_5s7ur03klaravellogo.png',7),(47,'2017-12-10 07:25:05','2017-12-10 07:25:05','dp_p7n2u3zrlogowhite.png',7),(48,'2017-12-10 07:25:18','2017-12-10 07:25:18','dp_vzgjj32upp.jpeg',7);
+INSERT INTO `pictures` VALUES (16,'2017-10-10 14:25:23','2017-10-10 14:25:23','dp_5evcy6v6pp.jpg',1),(18,'2017-10-10 14:28:02','2017-10-10 14:28:02','dp_tdaryrgbdeepee.jpg',3),(19,'2017-10-10 20:34:56','2017-10-10 20:34:56','dp_i6tk6wj5logo.png',1),(20,'2017-11-02 07:11:18','2017-11-02 07:11:18','dp_brfxcvef60.jpg',1),(22,'2017-11-02 07:56:15','2017-11-02 07:56:15','dp_pnn3ba2jre9167727.jpg',1),(23,'2017-11-02 08:00:37','2017-11-02 08:00:37','dp_pkit4jdqJHIDJointEditorial4125b.jpg',1),(24,'2017-11-02 09:23:01','2017-11-02 09:23:01','dp_3g4xryxopexelsphoto276508.jpeg',4),(29,'2017-11-02 10:27:55','2017-11-02 10:27:55','dp_odjb7aggpexelsphoto263189.jpeg',5),(30,'2017-11-02 13:52:35','2017-11-02 13:52:35','dp_6teqs038traditionalentry.jpg',7),(31,'2017-11-02 13:52:44','2017-11-02 13:52:44','dp_07aosa2vshutterstock48791164.jpg',7),(32,'2017-11-02 13:52:55','2017-11-02 13:52:55','dp_mmoby7kkcome.jpg',7),(33,'2017-11-02 13:53:07','2017-11-02 13:53:07','dp_ouc7gczvlandscapefoyer1.jpg',7),(34,'2017-12-10 07:18:43','2017-12-10 07:18:43','dp_42bjus3cpage.png',7),(35,'2017-12-10 07:18:55','2017-12-10 07:18:55','dp_r4478dpv5112010.png',7),(37,'2017-12-10 07:19:28','2017-12-10 07:19:28','dp_ghkotsefemail.png',7),(38,'2017-12-10 07:19:44','2017-12-10 07:19:44','dp_4k6hr5iedqee.jpg',6),(39,'2017-12-10 07:19:56','2017-12-10 07:19:56','dp_2v28i4tpbaba.jpg',6),(40,'2017-12-10 07:20:05','2017-12-10 07:20:05','dp_szt5jsgxjohn.jpg',7),(41,'2017-12-10 07:20:18','2017-12-10 07:20:18','dp_nnmytzvodasboard.png',7),(42,'2017-12-10 07:23:47','2017-12-10 07:23:47','dp_i2hhsbtglogo.png',7),(43,'2017-12-10 07:23:58','2017-12-10 07:23:58','dp_sqfxs8r2345367061n.jpg',7),(44,'2017-12-10 07:24:18','2017-12-10 07:24:18','dp_woxnofqtoverall.jpg',7),(45,'2017-12-10 07:24:31','2017-12-10 07:24:31','dp_why0y2kusinglelogo.jpg',7);
 /*!40000 ALTER TABLE `pictures` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,7 +335,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `portfolio_lists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `portfolio_lists` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -359,7 +359,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `services`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `services` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -416,7 +416,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `supervisors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supervisors` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -441,7 +441,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `testimonials`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `testimonials` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) DEFAULT NULL,
@@ -470,7 +470,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `unit_heads`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `unit_heads` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `firstname` varchar(20) DEFAULT NULL,
@@ -497,7 +497,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(60) NOT NULL,
@@ -507,21 +507,11 @@ CREATE TABLE `users` (
   `remember_token` varchar(150) DEFAULT NULL,
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL,
-  `address` varchar(250) DEFAULT NULL,
   `role` varchar(20) DEFAULT NULL,
-  `gender` varchar(6) DEFAULT NULL,
   `mobile` varchar(30) DEFAULT NULL,
-  `dob` varchar(20) DEFAULT NULL,
-  `marital_status` varchar(20) DEFAULT NULL,
-  `department` varchar(30) DEFAULT NULL,
-  `grade` varchar(20) DEFAULT NULL,
-  `employee_type` varchar(20) DEFAULT NULL,
-  `job_title` varchar(100) DEFAULT NULL,
-  `date_of_hire` varchar(20) DEFAULT NULL,
-  `entitled` int(4) DEFAULT NULL,
-  `balance` int(4) DEFAULT NULL,
+  `activation` int(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -530,7 +520,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'John Osemeke','john@example.com','$2y$10$kt0MlchXANZ9fWyFCFLcwORXfbCAqMrjswqzMtE3yxuvAbBQs7Dhm',NULL,'NIRpNA14TgjcfdZieg88zN6pgi6HC34h0GUKH1EpBViNsQg5Z8K4R8V28ShG','2017-08-31','2018-03-05','Dolphin Estate Lekki, Lagos','admin','male','08094616433','2017-08-28','Single','I.T','Level-5','Freelance','Web Administrator','2017-08-08',30,NULL),(2,'Ademola Plumptre','demmy@tfolc.com','$2y$10$whvB.20gpaEhG989dqRq7OeUqPND105vuC/vh0Y77pLiyQ5Q2MYni',NULL,'vWrYgLhLcqSgK6dkdVUe4Zfv80CVdBlmCLcMvUIfjv6RKC1rYBPg3K4OaPt3','2017-08-15','2017-09-15','','staff','','','','Single','Production','Level-3','Full Time','Web/Software Developer, Instructor','',15,15),(4,'Rotiwa Omodele','rotiwa@tfolc.com','$2y$10$Lcu14mmWiH3frYT05TMEVOnirakajeJafHfBmZt4tKbqzrKYkJCOS',NULL,'7oBQYwk1EnrdSN00VeEl2hfMtCmxBAcAUqrNkzALz1WLiztlFi9zAPQFsSV3','2017-08-15','2017-09-15','19, Ilupeju road, Ilupeju, Lagos','staff','Male','08094616433','','Married','I.T','Level-2','Full Time','Social media expert','',20,NULL),(8,'Opeyemi Aregbesola','ope@gmail.com','$2y$10$FRtKYKe2Go6w1saFiyyY/Ob.HV0PlfXPToEj0Hj.eyQnkDk6yIcN.',NULL,NULL,'2017-08-17','2017-08-31','ikoyi','staff','Female','08067883238','2017-08-23','Married','Security','Level-1','Part Time','Traffic Controller','2017-08-08',10,NULL),(12,'Ademola Plumptre','ade@yahoo.com','$2y$10$IrQiw6b/WlxQOSnpwtxn3.gVTiKi7IstxpyPs2XVUmEBH6X.5VnaW',NULL,NULL,'2017-08-17','2017-09-15','','staff','','','','','Security','Officer 1','Full Time','CCTV  Security','2017-06-01',15,NULL),(13,'John Ifeanyi','johnny@gmail.com','$2y$10$aMGC.gDTYBb9Prhk1tla7.EIdll/isaBqqwG4QN3IFa0ECEBOaMPe',NULL,NULL,'2017-08-17','2017-09-15','','staff','','','','--Select Status --','security','Clerical Officer 2','Part Time','Traffic Controller','2017-09-01',10,NULL),(16,'Amadi Oko','oko@gmail.com','$2y$10$fz0osYBdYaD6qaOJdsZlUeSmo4qI6O2bzdgwgMU659LTVquYb5Wv6',NULL,'ENhlWwW5ekPlJfsxx0XJ4h8lAu4dDCl4LxezNgM47cMw9TgMYhYoerl3NZIk','2017-08-18','2018-01-13','33, Ilupeju bye-pass, ilupeju, Lagos','staff','Male','08094616433','2008-02-19','Married','I.T','Senior Level','Full Time','System Support Analyst','2017-01-02',20,20),(24,'Adebola Omobude','adebola@gmail.com','$2y$10$3iMAvN8vX8sU2zwUZFWzg.p2ESl.sYtBVFaduRdC170eRIOe5ZUFy',NULL,NULL,'2017-08-23','2017-09-15','Ikeja Ogba','staff','Female','0908475634','2017-08-01','Single','Production','Level-1','Part Time','Cleaner','2017-08-23',5,NULL),(26,'Fashola Adeshina','fashola@yahoo.com','$2y$10$t0l8eSaGt.G/NJWrebTWReq5P5QVzlxnqZIyKWxTeGMJnRYb5g3La',NULL,NULL,'2017-08-24','2017-08-24',NULL,'staff',NULL,NULL,NULL,NULL,'Production','Level-1','Full Time','Estimator','2017-08-01',NULL,NULL),(27,'omolola','omolola@gmail.com','$2y$10$i6rdsab5c4HtbVYdIye4L.8qDwuRx1vUWnGwWl0OqIBlHRKRi6dKG',NULL,NULL,'2017-08-24','2017-08-24',NULL,'staff',NULL,NULL,NULL,NULL,'Security','Level-2','Full Time','Accountant','2013-08-06',NULL,NULL),(29,'Blessing Grace','blessing@gmail.com','$2y$10$1zvXyjmwk4xaz7xtZX7Mk.boNgTIBJNoeVSukXef/RyqOoa.SGRgK',NULL,'j5R7KTDa4lZffgtFTDGXRDSYzyMr7finKye1hHemFaGY9ZDmrPYj5HrIgEbw','2017-08-24','2017-08-24','Ajao Estate, Akpakun lane, Lagos','staff','Female','08094616433','2017-08-28','Single','Production','Level-2','Part Time','Quality Assurance','2017-08-08',15,NULL),(34,'John Ifeanyi','ifeanyi@tfolc.com','$2y$10$BD21vIbhuAI84P3SJF/pLOaNAihtB6/kgZ6KwXaacZbbVmTIp6ubW',NULL,'GaYLZWKibpxBiIHoEWWcIdxtZOu8B6AUczZ73A9aK1pwtKNCITql8y4lkc4s','2017-08-31','2017-09-05','Ademola Alakija Street, Lagos','staff','Male','08067883238','2017-08-28','Single','I.T','Entry Level','Full Time','Consultant, Data Entry Manager','2017-03-03',10,NULL),(35,'Adebola Ademola','adebola@tfolc.com','$2y$10$cRve4sj3qS5KD4rvJ9h5tuKQSeK/kdVGbbGrIjL4hLuK2VUKXc1/C',NULL,NULL,'2017-08-31','2017-09-03','','staff','','','','','Bookshop','Entry Level','Freelance','Columnist','2017-08-01',10,NULL),(38,'Theresa Osemeke','theresa@tfolc.com','$2y$10$i7ZO85ZEa4M6/ujL5FZ9fOk/lnuVBqQPacC6sa4wnnw/QjCO6J97S',NULL,'QTF6phUa1OgeONRS9Jlw2PWFN53w71bCTyZQWpDYZShPVU9PatOsega02JnH','2017-09-01','2017-09-14','Adeleke Street ','staff','Female','08067883238','2017-09-03','Single','I.T','junior Level','Part Time','Evangelism','2017-09-01',10,NULL),(41,'johnny bravo','johnbravo@yahoo.com','$2y$10$OHpD9xXUrFlRR.yPBbiKfezMqA3bD/OlkQzoSrU3il1HeZD4riX3C',NULL,NULL,'2017-09-05','2017-09-05',NULL,'staff',NULL,NULL,NULL,NULL,'I.T','Senior Level','Full Time','Graphic','2017-08-30',20,NULL),(42,'Folake Adefolake','folake@tfolc.org','$2y$10$e4Mha7PG4ajLpIXesji8V.FfRpzF4ghJajH7q0aErjtXuNAyo3hr2',NULL,NULL,'2017-09-05','2017-09-05',NULL,'staff',NULL,NULL,NULL,NULL,'security','Entry Level','Full Time','Traffic Controller','2017-09-01',12,NULL),(43,'Adebisi Bisi','adebisi@tfolc.org','$2y$10$auPPijl9crfivrnEnbITTOOdrULzqf23EBBL8hAcIaZDytVUvGpsa',NULL,NULL,'2017-09-05','2017-09-05',NULL,'staff',NULL,NULL,NULL,NULL,'security','Entry Level','Full Time','Searcher','2017-09-01',12,NULL),(44,'Adeleke Johnson','adeleke@tfolc.org','$2y$10$SSH9eRCO.B9z1jqajxmI9O/ZRIwqMc3dD4WBjfChLlHM56tF5Ngqq',NULL,NULL,'2017-09-05','2017-09-05',NULL,'supervisor',NULL,NULL,NULL,NULL,'security','Entry Level','Full Time','In-house controller','2017-09-01',15,NULL),(45,'adam allen','adam@yahoo.com','$2y$10$Ro.ICt5uCivXV9icy2tWZeJpmo0I7egUUuMGVWsA/cjz0sNpgUxre',NULL,'e0SoRonPqcofMvsw6cio7w1VfyNU75cfiQUJaEo0zRwbqBokoCQw0Xw5WlZT','2017-09-05','2017-09-05',NULL,'staff',NULL,NULL,NULL,NULL,'I.T','Entry Level','Part Time','social media','2017-09-22',20,NULL),(46,'Opeyemi Aregbesola','ope@tfolc.com','$2y$10$W9McOQMSzBi7N05dDWZQD.JzJ0D8J.fmhKQfWzzcRDNJevTqld42a',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Production','Officer 2','Full Time','Graphix Artist','2017-01-02',20,NULL),(47,'Afeez Adeleke','afeez@tfolc.com','$2y$10$7NYZGlbATVzi8kbfwaE2a.uy0ZjdwYr4oUtzjyRjBNOysVtJG/c2y',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Production','Clerical Officer 1','Contract','Apprentice','2017-01-16',5,NULL),(48,'Wasiu Aina','wasiu@tfolc.com','$2y$10$ZfPUYluQKoRUiAeNRE4bIOViL9xy/divF2yLLzwBrnVqxAoMxVJnC',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Production','Clerical Officer 2','Contract','Senior Appretice','2017-01-09',10,NULL),(49,'Akinlami Bolade','akinlami@tfolc.com','$2y$10$osf7f7o5BYdDi8QMzarAxuwwwFEV0XbNkjv8C2K5.ae1AQUVgYDnC',NULL,'Y4gwfoh51NiYtYy5KKfvxKlrG3qwZm5Ih72oCryxYiccqNWgOuYi0HSLGxCP','2017-09-15','2017-09-15',NULL,'supervisor',NULL,NULL,NULL,NULL,'Production','Officer 1','Full Time','Production Manager','2017-01-02',25,NULL),(50,'Modupe Olowookere','modupe@tfolc.com','$2y$10$PUTbh/h3.oFkl1LFyWArYevc6A.iNmPkNYJbvwR5hI8OEHha8ZaoK',NULL,NULL,'2017-09-15','2017-09-15',NULL,'admin',NULL,NULL,NULL,NULL,'Admin','AssistantManager','Full Time','Deputy General Manager','2017-09-01',30,NULL),(51,'Esther Akpan','esther@tfolc.com','$2y$10$FWkLCl2LtWww4yhF0UtRMO0j/xvqGc7/wmk6YJ/0olTXdqomFgvTC',NULL,NULL,'2017-09-15','2018-01-13','','admin','','','','','Human Resource','Officer 2','Full Time','Marketer','2017-07-03',20,NULL),(52,'David Okereke','david1@tfolc.com','$2y$10$Qf/AN4/3tuuA.f7MaogCfuf82RRjw3L1uJMqXAxfxpBISXd/.BxdG',NULL,NULL,'2017-09-15','2017-09-15',NULL,'supervisor',NULL,NULL,NULL,NULL,'Publication','Officer 2','Full Time','Head of Marketing','2017-07-03',20,NULL),(53,'Johnny Osemeke','johnny@tfolc.com','$2y$10$FP4Ni2rsW0Y4YR1WW0Y1tedvupTyRh.6d/IZG.34R5wld/FNBlz/W',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Publication','Officer 2','Full Time','Online Sales Manager','2017-03-01',20,NULL),(54,'Samuel Morka','sam@tfolc.com','$2y$10$DK3kQn/e8KzvUDvQqYi3VucHORKg0Q.1M/nEr618gxA4KCNNG0ODu',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Publication','Officer 2','Full Time','Book Seller','2017-02-01',20,NULL),(55,'Omolara Solanke','omolara@tfolc.com','$2y$10$g6B7PBtaCrYLtMc5i29GoefvHAAZSXfkNsj.U/pGWqGzg6Fq8OPw.',NULL,'vROS9bp81HjmojGuPUMmUvAxVeC8Fqebq7ODRyJiOvqDquFBhAddvqgbLk1R','2017-09-15','2017-09-15','','supervisor','','','','','Account','Officer 2','Full Time','Accountant','2017-01-30',20,NULL),(56,'Joy Oke','joy@tfolc.com','$2y$10$rLS2eTRN.YZyawnEbwT5/.4iOOSntd9lKgYOK778YB4i0315S7haC',NULL,'CdNGHumAwGEaSsyc0uqcJxLbFaSmF4VCZ4CsCW7eGQ4slb49gLkW1zF9dHDB','2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Account','Management Trainee 1','Part Time','Account Support','2017-05-15',10,NULL),(57,'Bukky Ademola','bukky@tfolc.com','$2y$10$We.dn/EODyHv4N0ryOvT7OEJNrxV4Lq33IkFd.hcWz4.d9Gpd/6SO',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Account','Management Trainee 2','Part Time','Account Support 2','2017-09-04',15,NULL),(58,'Oluchi Uzoaro','oluchi@tfolc.com','$2y$10$YJ4GHaHhsX0wY6Ac4I241uqVCU1pEfWvr4JWutpqELZCwEHa6MfTa',NULL,NULL,'2017-09-15','2017-09-15',NULL,'supervisor',NULL,NULL,NULL,NULL,'Admin','Officer 2','Full Time','Human Resource','2017-01-02',20,NULL),(59,'Fashola Adeshina','fashola@tfolc.com','$2y$10$j3cZFZ7Fm7WGop20lJPuY.j39YA0KZrhoJ3OoADoWoF8lJvK/v.x2',NULL,'em4R6o0mf807b3ircLsHcac6Vegl69kMOQfAeeA6Gr09HBLU50Df9tVlWjB3','2017-09-15','2017-09-15','','supervisor','','','','','Editing','Officer 1','Full Time','Estimator','2017-08-01',20,NULL),(60,'Micheal Eze','micheal@tfolc.com','$2y$10$27bnpXZCbzV0ROcYKea8eOjK3zohjcR11Y06QqYJsVZRoZASTIMd.',NULL,'joTJ7cm96kYVsPz9sudjQGTQcwmtE7JgDzj7UNDxFqNbvrv2xwolKsGftY8f','2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Editing','Officer 1','Full Time','Assistant Estimator','2017-09-06',10,NULL),(61,'johnbull Amadi','johnbull@tfolc.com','$2y$10$GtYMpOPquTwQFsQCjfcnFuvpsp.7LVJstTyfIqoVj9Sde/aVXh4JW',NULL,NULL,'2017-09-15','2017-09-15',NULL,'staff',NULL,NULL,NULL,NULL,'Editing','Management Trainee 2','Full Time','Cost finder','2017-09-13',10,NULL),(62,'mel Michael','mel@yahoo.com','$2y$10$zYcvKB52gaydI4pgXStaYOGw856x/SkD/S.59Bc3EbqUg5CR5N3OO',NULL,'WPCRxRLhlZnD9z3bKchiLP39XfPdIykIxZFAxoxELXCF3ITl2njp0Z7By7Ch','2017-09-15','2018-01-13','','supervisor','','','','','I.T','Officer 2','Full Time','technical','2017-07-12',20,NULL),(63,'waleewoo','walewoo@yahoo.com','$2y$10$LWAHiapp0eePQXO7ObYiSeqml62R3uzspnuXm/LxZ7xoc3vSLLgi2',NULL,NULL,'2017-10-13','2018-01-13','','admin','','','','','Human Resource','Clerical Officer 1','Full Time','guys','',20,NULL),(64,'assssss','ades@yahoo.com','$2y$10$3pQ9kaWcmV82A2FGP2cAt.nCmHVB8rw2pMyhOOZNhcaNg6Ekhwuz6',NULL,NULL,'2017-10-13','2017-10-13',NULL,'staff',NULL,NULL,NULL,NULL,'I.T','Management Trainee 2','Freelance','web developer','02-11-2015',20,NULL),(65,'ski gbim','ski@yahoo.com','$2y$10$B9RwT18oy4t2KiGPupd.reYoyh.X1KWtUgOS0U67/ewZCrDQAgGrm',NULL,NULL,'2017-10-13','2017-10-13',NULL,'staff',NULL,NULL,NULL,NULL,'security','Clerical Officer 2','Full Time','web developer','02-11-2013',15,NULL),(66,'matori','dwww@yahoo.com','$2y$10$ZzrRcEAXnchld0keEFSP0upsq0qWIiT4JOZvLZ9sHwRdPVCzgMvFi',NULL,NULL,'2017-10-13','2017-10-13',NULL,'staff',NULL,NULL,NULL,NULL,'I.T','Clerical Officer 2','Full Time','web developer','02-11-2013',20,NULL),(67,'queency','queen@yahoo.com','$2y$10$s3QPKIN.0ecuJzmNDL3Fq.DrlU0C3V7R7TKwqO8jPu08TedRCMCmy',NULL,NULL,'2017-10-13','2017-10-13',NULL,'staff',NULL,NULL,NULL,NULL,'security','Clerical Officer 2','Part Time','web developer','02-11-2013',20,NULL),(68,'Plumptre Adekoyejo','ademola.plumptre@tfolc.org','$2y$10$Nh8IxsV94zbL/F02ODOG1.jxjZKFgpn/4T4YDAy4wSh3PA53R5Weq',NULL,'nbvmlTfMrjF8qZSkR1EB7pxW6WvYkpSnfhJxgkgaYFRGcePsaWL6jDeR13DK','2018-01-08','2018-01-13',NULL,'staff',NULL,NULL,NULL,NULL,'I.T','Management Trainee 1','Full Time','web developer','2016-11-10',20,NULL);
+INSERT INTO `users` VALUES (1,'John Osemeke','john@example.com','$2y$10$kt0MlchXANZ9fWyFCFLcwORXfbCAqMrjswqzMtE3yxuvAbBQs7Dhm',NULL,'j0BAO6AAq3hdF0jQO5k6nENkBSShgePwXxv4Jmo4zIDf6JoJh73eWVkxbRAD','2017-08-31','2018-03-05','1','08094616433',1),(72,'Demmy','dplumptre@yahoo.com','$2y$10$jgtY5UnawYhgN1ZP7gcHx.M7AmqZH9KG.aYscHsSVK95/QFWj35um',NULL,NULL,'2020-08-25','2020-08-25','1',NULL,1),(73,'Houssein','info@prestigeinternationallimited.com','$2y$10$Z8IJ9wer0boeFelhj0BGkOJrou.QAgHKNeAV2K/uoVGV7eaiyLRlC',NULL,NULL,'2020-08-25','2020-08-25','1',NULL,1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -543,4 +533,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-25 11:25:19
+-- Dump completed on 2020-08-25 17:14:17

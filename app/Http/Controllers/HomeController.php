@@ -77,7 +77,8 @@ class HomeController extends Controller
                 'name' => $request->name,
                 'email'=>  $request->email,
                 'password' => Hash::make($request->password),
-            
+                'activation'=> '1',
+                'role' =>'1'    
                ));
     
                $request->session()->flash('message.level', 'success');
